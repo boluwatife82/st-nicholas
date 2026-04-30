@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Telemedicine - St. Nicholas Hospital</title>
+    <link rel="icon" type="image/png" href="assets/images/st_Nicholas_logo__1_-removebg-preview.png">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <body>
+ 
+  <!-- Navbar inject here -->
+   <div id="navbar"></div>
+ 
+  <!-- Loading overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Redirecting to payment...</div>
+  </div>
+ 
+ 
+  <!-- ══ HERO ══ -->
+  <section class="uktb-hero">
+    <div class="uktb-hero__inner">
+      <div>
+        <div class="uktb-hero__eyebrow">
+          <div class="uktb-hero__eyebrow-line"></div>
+          <span>St. Nicholas Hospital</span>
+        </div>
+        <h1 class="uktb-hero__title">
+          UK Visa <em>TB Screening</em><br>
+          Booking Form
+        </h1>
+        <p class="uktb-hero__sub">
+          St. Nicholas Hospital is an approved centre for UK Visa Tuberculosis Screening.
+          Complete the form below and proceed to payment to confirm your appointment.
+        </p>
+      </div>
+ 
+      <div class="uktb-hero__badge">
+        <!-- UK Flag SVG -->
+        <div class="uktb-hero__flag">
+          <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="40" fill="#012169"/>
+            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="6"/>
+            <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="4"/>
+            <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="10"/>
+            <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="6"/>
+          </svg>
+        </div>
+        <div class="uktb-hero__price">₦120,000</div>
+        <div class="uktb-hero__price-sub">Per applicant</div>
+        <div class="uktb-hero__approved">✓ UKVI Approved</div>
+      </div>
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ MAIN CONTENT ══ -->
+  <div class="uktb-main">
+ 
+    <!-- ── FORM ── -->
+    <div class="uktb-form">
+ 
+      <div class="f-error" id="formError"></div>
+ 
+      <!-- SECTION 1 — Service & Appointment -->
+      <div class="form-section">
+        <div class="form-section__eyebrow">Service &amp; Appointment</div>
+        <h2 class="form-section__title">Select Your Service</h2>
+        <p class="form-section__sub">Choose the service you require and your preferred appointment date.</p>
+ 
+        <div class="f-grid f-grid--2">
+          <div class="f-field f-field--full">
+            <label class="f-label" for="service">Service <span class="req">*</span></label>
+            <select class="f-select" id="service" name="service" required>
+              <option value="">— Select Service —</option>
+              <option value="UK Visa Tuberculosis Screening">UK Visa Tuberculosis Screening</option>
+              <option value="Covid-19 Vaccination">Covid-19 Vaccination</option>
+            </select>
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="preferred_date">Appointment Date <span class="req">*</span></label>
+            <input class="f-input" type="date" id="preferred_date" name="preferred_date" required />
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="preferred_time">Preferred Time <span class="req">*</span></label>
+            <select class="f-select" id="preferred_time" name="preferred_time" required>
+              <option value="">— Select Available Time —</option>
+              <option value="08:00">8:00 AM</option>
+              <option value="09:00">9:00 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="16:00">4:00 PM</option>
+            </select>
+          </div>
+        </div>
+      </div>
+ 
+ 
+      <!-- SECTION 2 — Personal Information -->
+      <div class="form-section">
+        <div class="form-section__eyebrow">Personal Information</div>
+        <h2 class="form-section__title">Applicant Details</h2>
+        <p class="form-section__sub">Enter the details exactly as they appear on your passport.</p>
+ 
+        <div class="f-grid f-grid--3">
+          <div class="f-field">
+            <label class="f-label" for="last_name">Last Name <span class="req">*</span></label>
+            <input class="f-input" type="text" id="last_name" name="last_name"
+                   placeholder="Surname" required />
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="first_name">First Name <span class="req">*</span></label>
+            <input class="f-input" type="text" id="first_name" name="first_name"
+                   placeholder="Given name" required />
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="middle_name">Middle Name</label>
+            <input class="f-input" type="text" id="middle_name" name="middle_name"
+                   placeholder="Optional" />
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="date_of_birth">Date of Birth <span class="req">*</span></label>
+            <input class="f-input" type="date" id="date_of_birth" name="date_of_birth" required />
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="sex">Sex <span class="req">*</span></label>
+            <select class="f-select" id="sex" name="sex" required>
+              <option value="">— Select Sex —</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+            </select>
+          </div>
+ 
+          <div class="f-field" id="lmpField" style="display:none;">
+            <label class="f-label" for="lmp">Last Menstrual Period</label>
+            <input class="f-input" type="date" id="lmp" name="lmp" />
+            <span class="f-hint">Females only — if applicable</span>
+          </div>
+ 
+          <div class="f-field f-field--full">
+            <label class="f-label" for="nationality">Nationality <span class="req">*</span></label>
+            <select class="f-select" id="nationality" name="nationality" required>
+              <option value="">— Select Nationality —</option>
+              <option>Afghan</option><option>Albanian</option><option>Algerian</option>
+              <option>American</option><option>Andorran</option><option>Angolan</option>
+              <option>Argentine</option><option>Armenian</option><option>Australian</option>
+              <option>Austrian</option><option>Azerbaijani</option><option>Bahamian</option>
+              <option>Bahraini</option><option>Bangladeshi</option><option>Barbadian</option>
+              <option>Belarusian</option><option>Belgian</option><option>Belizean</option>
+              <option>Beninese</option><option>Bhutanese</option><option>Bolivian</option>
+              <option>Bosnian</option><option>Botswanan</option><option>Brazilian</option>
+              <option>British</option><option>Bruneian</option><option>Bulgarian</option>
+              <option>Burkinabe</option><option>Burundian</option><option>Cambodian</option>
+              <option>Cameroonian</option><option>Canadian</option><option>Cape Verdean</option>
+              <option>Central African</option><option>Chadian</option><option>Chilean</option>
+              <option>Chinese</option><option>Colombian</option><option>Comorian</option>
+              <option>Congolese</option><option>Costa Rican</option><option>Croatian</option>
+              <option>Cuban</option><option>Cypriot</option><option>Czech</option>
+              <option>Danish</option><option>Djiboutian</option><option>Dominican</option>
+              <option>Dutch</option><option>Ecuadorian</option><option>Egyptian</option>
+              <option>Emirati</option><option>Equatorial Guinean</option><option>Eritrean</option>
+              <option>Estonian</option><option>Ethiopian</option><option>Fijian</option>
+              <option>Filipino</option><option>Finnish</option><option>French</option>
+              <option>Gabonese</option><option>Gambian</option><option>Georgian</option>
+              <option>German</option><option>Ghanaian</option><option>Greek</option>
+              <option>Grenadian</option><option>Guatemalan</option><option>Guinean</option>
+              <option>Guyanese</option><option>Haitian</option><option>Honduran</option>
+              <option>Hungarian</option><option>Icelandic</option><option>Indian</option>
+              <option>Indonesian</option><option>Iranian</option><option>Iraqi</option>
+              <option>Irish</option><option>Israeli</option><option>Italian</option>
+              <option>Ivorian</option><option>Jamaican</option><option>Japanese</option>
+              <option>Jordanian</option><option>Kazakhstani</option><option>Kenyan</option>
+              <option>Kuwaiti</option><option>Kyrgyz</option><option>Lao</option>
+              <option>Latvian</option><option>Lebanese</option><option>Liberian</option>
+              <option>Libyan</option><option>Lithuanian</option><option>Luxembourgish</option>
+              <option>Macedonian</option><option>Malagasy</option><option>Malawian</option>
+              <option>Malaysian</option><option>Maldivian</option><option>Malian</option>
+              <option>Maltese</option><option>Mauritanian</option><option>Mauritian</option>
+              <option>Mexican</option><option>Moldovan</option><option>Mongolian</option>
+              <option>Montenegrin</option><option>Moroccan</option><option>Mozambican</option>
+              <option>Namibian</option><option>Nepalese</option><option>New Zealander</option>
+              <option>Nicaraguan</option><option>Nigerian</option><option>Norwegian</option>
+              <option>Omani</option><option>Pakistani</option><option>Panamanian</option>
+              <option>Papua New Guinean</option><option>Paraguayan</option><option>Peruvian</option>
+              <option>Polish</option><option>Portuguese</option><option>Qatari</option>
+              <option>Romanian</option><option>Russian</option><option>Rwandan</option>
+              <option>Saudi Arabian</option><option>Senegalese</option><option>Serbian</option>
+              <option>Sierra Leonean</option><option>Singaporean</option><option>Slovak</option>
+              <option>Slovenian</option><option>Somali</option><option>South African</option>
+              <option>South Korean</option><option>Spanish</option><option>Sri Lankan</option>
+              <option>Sudanese</option><option>Swedish</option><option>Swiss</option>
+              <option>Syrian</option><option>Taiwanese</option><option>Tajik</option>
+              <option>Tanzanian</option><option>Thai</option><option>Togolese</option>
+              <option>Trinidadian</option><option>Tunisian</option><option>Turkish</option>
+              <option>Turkmen</option><option>Ugandan</option><option>Ukrainian</option>
+              <option>Uruguayan</option><option>Uzbek</option><option>Venezuelan</option>
+              <option>Vietnamese</option><option>Yemeni</option><option>Zambian</option>
+              <option>Zimbabwean</option>
+            </select>
+          </div>
+        </div>
+      </div>
+ 
+ 
+      <!-- SECTION 3 — Travel Documents -->
+      <div class="form-section">
+        <div class="form-section__eyebrow">Travel Documents</div>
+        <h2 class="form-section__title">Passport &amp; Visa</h2>
+        <p class="form-section__sub">Your travel document information for the screening record.</p>
+ 
+        <div class="f-grid f-grid--2">
+          <div class="f-field">
+            <label class="f-label" for="passport_number">Passport Number</label>
+            <input class="f-input" type="text" id="passport_number" name="passport_number"
+                   placeholder="e.g. A12345678" />
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="visa_type">Visa Type</label>
+            <input class="f-input" type="text" id="visa_type" name="visa_type"
+                   placeholder="e.g. Student, Spouse, Work" />
+          </div>
+        </div>
+      </div>
+ 
+ 
+      <!-- SECTION 4 — Contact Details -->
+      <div class="form-section">
+        <div class="form-section__eyebrow">Contact Details</div>
+        <h2 class="form-section__title">How to Reach You</h2>
+        <p class="form-section__sub">Your confirmation email and appointment details will be sent here.</p>
+ 
+        <div class="f-grid f-grid--2">
+          <div class="f-field">
+            <label class="f-label" for="phone">Phone Number <span class="req">*</span></label>
+            <input class="f-input" type="tel" id="phone" name="phone"
+                   placeholder="+234 800 000 0000" required />
+          </div>
+ 
+          <div class="f-field">
+            <label class="f-label" for="email">Email Address <span class="req">*</span></label>
+            <input class="f-input" type="email" id="email" name="email"
+                   placeholder="your@email.com" required />
+          </div>
+ 
+          <div class="f-field f-field--full">
+            <label class="f-label" for="address_nigeria">Address in Nigeria <span class="req">*</span></label>
+            <textarea class="f-textarea" id="address_nigeria" name="address_nigeria"
+                      placeholder="Your current address in Nigeria" required></textarea>
+          </div>
+ 
+          <div class="f-field f-field--full">
+            <label class="f-label" for="address_uk">Address in the UK <span class="req">*</span></label>
+            <textarea class="f-textarea" id="address_uk" name="address_uk"
+                      placeholder="Your address or intended address in the UK" required></textarea>
+          </div>
+        </div>
+      </div>
+ 
+ 
+      <!-- SECTION 5 — Terms & Payment -->
+      <div class="form-section">
+        <div class="form-section__eyebrow">Terms &amp; Payment</div>
+        <h2 class="form-section__title">Accept &amp; Pay</h2>
+        <p class="form-section__sub">Please read and accept the terms before proceeding to payment.</p>
+ 
+        <div class="f-terms">
+          <input type="checkbox" id="terms_accepted" name="terms_accepted" required />
+          <label for="terms_accepted">
+            I have read and accepted the
+            <a href="https://intranet.saintnicholashospital.com/uk-tb-screening" target="_blank" rel="noopener">
+              Terms and Conditions
+            </a>
+            of St. Nicholas Hospital as well as the United Kingdom Home Office requirements.
+            I understand that the fee of <strong>₦120,000</strong> is non-refundable once the screening has been conducted.
+          </label>
+        </div>
+ 
+        <button class="btn-pay" id="submitBtn" type="button">
+          <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Proceed to Payment
+          <span class="btn-pay__amount">— ₦120,000</span>
+        </button>
+ 
+        <div class="paystack-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Secured by Paystack
+        </div>
+      </div>
+ 
+    </div>
+ 
+ 
+    <!-- ── SIDEBAR ── -->
+    <div class="uktb-sidebar">
+ 
+      <div class="sidebar-card">
+        <div class="sidebar-card__title">Important Information</div>
+ 
+        <div class="sidebar-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <div class="sidebar-item__label">Processing Time</div>
+            <div class="sidebar-item__val">Results ready within 3–5 working days</div>
+          </div>
+        </div>
+ 
+        <div class="sidebar-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div class="sidebar-item__label">Location</div>
+            <div class="sidebar-item__val">57 Campbell Street, Lagos Island, Lagos</div>
+          </div>
+        </div>
+ 
+        <div class="sidebar-item">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div>
+            <div class="sidebar-item__label">What to Bring</div>
+            <div class="sidebar-item__val">Valid passport, payment confirmation, 2 passport photos</div>
+          </div>
+        </div>
+ 
+        <div class="sidebar-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg>
+          <div>
+            <div class="sidebar-item__label">Enquiries</div>
+            <div class="sidebar-item__val">08022908484 | 08035251295</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="price-card">
+        <div class="price-card__title">Payment Summary</div>
+ 
+        <div class="price-row">
+          <span class="price-row__label">Screening fee</span>
+          <span class="price-row__val">₦120,000</span>
+        </div>
+        <div class="price-row">
+          <span class="price-row__label">Per applicant</span>
+          <span class="price-row__val">× 1</span>
+        </div>
+        <div class="price-row price-row--total">
+          <span class="price-row__label">Total</span>
+          <span class="price-row__val">₦120,000</span>
+        </div>
+      </div>
+ 
+    </div>
+ 
+  </div>
+ 
+ <div id="footer"></div>
+  <script src="/public/index.js" defer></script>
+ 
+</body>
+</html>

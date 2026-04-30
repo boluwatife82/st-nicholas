@@ -213,131 +213,131 @@ function showBtnStatus(btn, text, color) {
 }
 
 // ── UK TB MODAL LOGIC ──
-const tbBg = document.getElementById('tbModalBg');
+// const tbBg = document.getElementById('tbModalBg');
 
-const openTb = () => { 
-  if (tbBg) { 
-    tbBg.classList.add('open'); 
-    document.body.style.overflow = 'hidden'; 
-  } 
-};
+// const openTb = () => { 
+//   if (tbBg) { 
+//     tbBg.classList.add('open'); 
+//     document.body.style.overflow = 'hidden'; 
+//   } 
+// };
 
-const closeTb = () => { 
-  if (tbBg) { 
-    tbBg.classList.remove('open'); 
-    document.body.style.overflow = ''; 
-  } 
-};
+// const closeTb = () => { 
+//   if (tbBg) { 
+//     tbBg.classList.remove('open'); 
+//     document.body.style.overflow = ''; 
+//   } 
+// };
 
-// Global listener for all TB CTA buttons
-document.querySelectorAll('.uktb-cta').forEach(btn => {
-  btn.addEventListener('click', openTb);
-});
+// // Global listener for all TB CTA buttons
+// document.querySelectorAll('.uktb-cta').forEach(btn => {
+//   btn.addEventListener('click', openTb);
+// });
 
-const closeTbBtn = document.getElementById('closeTbModal');
-if (closeTbBtn) closeTbBtn.addEventListener('click', closeTb);
+// const closeTbBtn = document.getElementById('closeTbModal');
+// if (closeTbBtn) closeTbBtn.addEventListener('click', closeTb);
 
-if (tbBg) {
-  tbBg.addEventListener('click', e => { 
-    if (e.target === tbBg) closeTb(); 
-  });
-}
+// if (tbBg) {
+//   tbBg.addEventListener('click', e => { 
+//     if (e.target === tbBg) closeTb(); 
+//   });
+// }
 
-// Dynamic Date Constraints for TB Form
-const tbDob = document.getElementById('tb-dob');
-if (tbDob) {
-  const dobMax = new Date();
-  dobMax.setFullYear(dobMax.getFullYear() - 11); // Must be 11+ years old
-  tbDob.max = dobMax.toISOString().split('T')[0];
-}
+// // Dynamic Date Constraints for TB Form
+// const tbDob = document.getElementById('tb-dob');
+// if (tbDob) {
+//   const dobMax = new Date();
+//   dobMax.setFullYear(dobMax.getFullYear() - 11); // Must be 11+ years old
+//   tbDob.max = dobMax.toISOString().split('T')[0];
+// }
 
-const tbDateInput = document.getElementById('tb-date');
-if (tbDateInput) tbDateInput.min = new Date().toISOString().split('T')[0];
+// const tbDateInput = document.getElementById('tb-date');
+// if (tbDateInput) tbDateInput.min = new Date().toISOString().split('T')[0];
 
-// Applicant Counter Logic
-let tbCount = 1;
-const tbCountEl = document.getElementById('tb-count');
-const tbInc = document.getElementById('tb-inc');
-const tbDec = document.getElementById('tb-dec');
+// // Applicant Counter Logic
+// let tbCount = 1;
+// const tbCountEl = document.getElementById('tb-count');
+// const tbInc = document.getElementById('tb-inc');
+// const tbDec = document.getElementById('tb-dec');
 
-if (tbInc) tbInc.addEventListener('click', () => { 
-  if (tbCount < 10) { tbCount++; tbCountEl.textContent = tbCount; }
-});
-if (tbDec) tbDec.addEventListener('click', () => { 
-  if (tbCount > 1) { tbCount--; tbCountEl.textContent = tbCount; }
-});
+// if (tbInc) tbInc.addEventListener('click', () => { 
+//   if (tbCount < 10) { tbCount++; tbCountEl.textContent = tbCount; }
+// });
+// if (tbDec) tbDec.addEventListener('click', () => { 
+//   if (tbCount > 1) { tbCount--; tbCountEl.textContent = tbCount; }
+// });
 
 
-// ── TB FORM SUBMIT & PAYSTACK INTEGRATION ──
-const tbSubmitBtn = document.getElementById('tbSubmitBtn');
-if (tbSubmitBtn) {
-  tbSubmitBtn.addEventListener('click', function () {
-    const required = ['tb-fname', 'tb-lname', 'tb-dob', 'tb-passport', 'tb-phone', 'tb-email', 'tb-visa', 'tb-date'];
-    const allFilled = required.every(id => {
-      const el = document.getElementById(id);
-      return el && el.value.trim() !== '';
-    });
+// // ── TB FORM SUBMIT & PAYSTACK INTEGRATION ──
+// const tbSubmitBtn = document.getElementById('tbSubmitBtn');
+// if (tbSubmitBtn) {
+//   tbSubmitBtn.addEventListener('click', function () {
+//     const required = ['tb-fname', 'tb-lname', 'tb-dob', 'tb-passport', 'tb-phone', 'tb-email', 'tb-visa', 'tb-date'];
+//     const allFilled = required.every(id => {
+//       const el = document.getElementById(id);
+//       return el && el.value.trim() !== '';
+//     });
 
-    if (!allFilled) {
-      this.style.background = '#A32D2D';
-      this.textContent = 'Please fill all required fields';
-      setTimeout(() => {
-        this.style.background = '#1E9FD4'; // Updated to your new Cyan
-        this.textContent = 'Submit & Pay for TB Test';
-      }, 2500);
-      return;
-    }
+//     if (!allFilled) {
+//       this.style.background = '#A32D2D';
+//       this.textContent = 'Please fill all required fields';
+//       setTimeout(() => {
+//         this.style.background = '#1E9FD4'; // Updated to your new Cyan
+//         this.textContent = 'Submit & Pay for TB Test';
+//       }, 2500);
+//       return;
+//     }
 
-    this.disabled = true;
-    this.textContent = 'Preparing payment…';
+//     this.disabled = true;
+//     this.textContent = 'Preparing payment…';
 
-    // Data Extraction
-    const fname = document.getElementById('tb-fname').value.trim();
-    const lname = document.getElementById('tb-lname').value.trim();
-    const email = document.getElementById('tb-email').value.trim();
-    const phone = document.getElementById('tb-phone').value.trim();
-    const count = parseInt(document.getElementById('tb-count').textContent) || 1;
-    const amount = 25000 * count * 100; // Conversion to Kobo for Paystack
+//     // Data Extraction
+//     const fname = document.getElementById('tb-fname').value.trim();
+//     const lname = document.getElementById('tb-lname').value.trim();
+//     const email = document.getElementById('tb-email').value.trim();
+//     const phone = document.getElementById('tb-phone').value.trim();
+//     const count = parseInt(document.getElementById('tb-count').textContent) || 1;
+//     const amount = 25000 * count * 100; // Conversion to Kobo for Paystack
 
-    const launchPaystack = () => {
-      const handler = PaystackPop.setup({
-        key: 'pk_test_YOUR_KEY', // <-- Remember to swap for Live Key later
-        email: email,
-        amount: amount,
-        currency: 'NGN',
-        ref: 'STN-TB-' + Date.now(),
-        metadata: {
-          custom_fields: [
-            { display_name: 'Patient Name', value: fname + ' ' + lname },
-            { display_name: 'Phone', value: phone },
-            { display_name: 'Applicants', value: count },
-            { display_name: 'Service', value: 'UK TB Screening' }
-          ]
-        },
-        callback: function (response) {
-          closeTb();
-          alert('✅ Payment confirmed! Reference: ' + response.reference);
-        },
-        onClose: function () {
-          tbSubmitBtn.disabled = false;
-          tbSubmitBtn.style.background = '#1E9FD4';
-          tbSubmitBtn.textContent = 'Submit & Pay for TB Test';
-        }
-      });
-      handler.openIframe();
-    };
+//     const launchPaystack = () => {
+//       const handler = PaystackPop.setup({
+//         key: 'pk_test_YOUR_KEY', // <-- Remember to swap for Live Key later
+//         email: email,
+//         amount: amount,
+//         currency: 'NGN',
+//         ref: 'STN-TB-' + Date.now(),
+//         metadata: {
+//           custom_fields: [
+//             { display_name: 'Patient Name', value: fname + ' ' + lname },
+//             { display_name: 'Phone', value: phone },
+//             { display_name: 'Applicants', value: count },
+//             { display_name: 'Service', value: 'UK TB Screening' }
+//           ]
+//         },
+//         callback: function (response) {
+//           closeTb();
+//           alert('✅ Payment confirmed! Reference: ' + response.reference);
+//         },
+//         onClose: function () {
+//           tbSubmitBtn.disabled = false;
+//           tbSubmitBtn.style.background = '#1E9FD4';
+//           tbSubmitBtn.textContent = 'Submit & Pay for TB Test';
+//         }
+//       });
+//       handler.openIframe();
+//     };
 
-    // Inject Paystack script dynamically if missing
-    if (typeof PaystackPop === 'undefined') {
-      const script = document.createElement('script');
-      script.src = 'https://js.paystack.co/v1/inline.js';
-      script.onload = launchPaystack;
-      document.head.appendChild(script);
-    } else {
-      launchPaystack();
-    }
-  });
-}
+//     // Inject Paystack script dynamically if missing
+//     if (typeof PaystackPop === 'undefined') {
+//       const script = document.createElement('script');
+//       script.src = 'https://js.paystack.co/v1/inline.js';
+//       script.onload = launchPaystack;
+//       document.head.appendChild(script);
+//     } else {
+//       launchPaystack();
+//     }
+//   });
+// }
 
 
 // ── ACCESSIBILITY & UX POLISH ──
@@ -1678,5 +1678,136 @@ if (document.getElementById('calBody')) {
         document.querySelectorAll('.ct-reveal').forEach(el => obs.observe(el));
 
        })();
+
+
+      //  js for the uk form 
+       (function () {
+ 
+      // Set min date to today
+      const dateInputs = document.querySelectorAll('input[type="date"]');
+      const today = new Date().toISOString().split('T')[0];
+      const appointmentDate = document.getElementById('preferred_date');
+      if (appointmentDate) appointmentDate.min = today;
+ 
+      // Show LMP field only for females
+      const sexSelect = document.getElementById('sex');
+      const lmpField  = document.getElementById('lmpField');
+ 
+      if (sexSelect && lmpField) {
+        sexSelect.addEventListener('change', () => {
+          lmpField.style.display = sexSelect.value === 'Female' ? 'flex' : 'none';
+        });
+      }
+ 
+      // Form submission
+      const submitBtn = document.getElementById('submitBtn');
+      const formError = document.getElementById('formError');
+      const loading   = document.getElementById('loadingOverlay');
+ 
+      if (submitBtn) {
+        submitBtn.addEventListener('click', async () => {
+ 
+          // Clear previous error
+          formError.classList.remove('visible');
+          formError.textContent = '';
+ 
+          // Collect values
+          const service         = document.getElementById('service').value.trim();
+          const preferred_date  = document.getElementById('preferred_date').value;
+          const first_name      = document.getElementById('first_name').value.trim();
+          const last_name       = document.getElementById('last_name').value.trim();
+          const middle_name     = document.getElementById('middle_name').value.trim();
+          const date_of_birth   = document.getElementById('date_of_birth').value;
+          const sex             = document.getElementById('sex').value;
+          const lmp             = document.getElementById('lmp').value;
+          const nationality     = document.getElementById('nationality').value;
+          const passport_number = document.getElementById('passport_number').value.trim();
+          const visa_type       = document.getElementById('visa_type').value.trim();
+          const phone           = document.getElementById('phone').value.trim();
+          const email           = document.getElementById('email').value.trim();
+          const address_nigeria = document.getElementById('address_nigeria').value.trim();
+          const address_uk      = document.getElementById('address_uk').value.trim();
+          const terms_accepted  = document.getElementById('terms_accepted').checked;
+ 
+          // Basic validation
+          if (!service)         return showError('Please select a service.');
+          if (!preferred_date)  return showError('Please select an appointment date.');
+          if (!first_name)      return showError('First name is required.');
+          if (!last_name)       return showError('Last name is required.');
+          if (!date_of_birth)   return showError('Date of birth is required.');
+          if (!sex)             return showError('Please select your sex.');
+          if (!nationality)     return showError('Please select your nationality.');
+          if (!phone)           return showError('Phone number is required.');
+          if (!email)           return showError('Email address is required.');
+          if (!address_nigeria) return showError('Please enter your Nigeria address.');
+          if (!address_uk)      return showError('Please enter your UK address.');
+          if (!terms_accepted)  return showError('You must accept the terms and conditions to proceed.');
+ 
+          // Disable button and show loading
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Processing...';
+ 
+          try {
+            const response = await fetch('http://localhost:3000/api/uktb/initiate', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                service,
+                first_name,
+                last_name,
+                middle_name:     middle_name     || null,
+                date_of_birth,
+                sex,
+                lmp:             lmp             || null,
+                nationality,
+                passport_number: passport_number || null,
+                visa_type:       visa_type       || null,
+                phone,
+                email,
+                address_nigeria,
+                address_uk,
+                preferred_date,
+                terms_accepted:  'true'
+              })
+            });
+ 
+            const data = await response.json();
+ 
+            if (data.success && data.paymentUrl) {
+              // Show loading overlay then redirect to Paystack
+              loading.classList.add('visible');
+              setTimeout(() => {
+                window.location.href = data.paymentUrl;
+              }, 800);
+            } else {
+              showError(data.errors ? data.errors.join(', ') : (data.message || 'Something went wrong. Please try again.'));
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = `
+                <svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Proceed to Payment
+                <span style="font-size:14px;font-weight:400;opacity:0.75;margin-left:4px;">— ₦120,000</span>
+              `;
+            }
+ 
+          } catch (err) {
+            showError('Network error. Please check your connection and try again.');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              Proceed to Payment
+              <span style="font-size:14px;font-weight:400;opacity:0.75;margin-left:4px;">— ₦120,000</span>
+            `;
+          }
+ 
+        });
+      }
+ 
+      function showError(message) {
+        formError.textContent = '⚠️ ' + message;
+        formError.classList.add('visible');
+        formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+ 
+    })();
 
     
