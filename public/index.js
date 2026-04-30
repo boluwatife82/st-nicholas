@@ -858,7 +858,7 @@ if (payBg) {
 // 1. SAFE COMPONENT LOADER
 function loadComponent(id, file) {
     // Using /public/ because that's where your server root is
-    return fetch(`/public/${file}`)
+    return fetch(`/${file}`)
         .then(res => res.text())
         .then(data => {
             const el = document.getElementById(id);
