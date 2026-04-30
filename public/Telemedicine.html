@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Telemedicine - St. Nicholas Hospital</title>
+    <link rel="icon" type="image/png" href="assets/images/st_Nicholas_logo__1_-removebg-preview.png">
+    <link rel="stylesheet" href="/public/index.css">
+</head>
+<body>
+
+     <div id="navbar"></div>
+     <!-- ══ HERO ══ -->
+  <section class="tele-hero">
+    <div class="tele-hero__inner">
+ 
+      <!-- Left: Text -->
+      <div class="tele-hero__text">
+ 
+        <div class="tele-hero__eyebrow">
+          <div class="tele-hero__eyebrow-line"></div>
+          <span>Telemedicine</span>
+        </div>
+ 
+        <h1 class="tele-hero__title">
+          Your Doctor,<br>
+          <em>Anywhere You Are</em>
+        </h1>
+ 
+        <p class="tele-hero__sub">
+          St. Nicholas Hospital brings world-class specialist care directly to you — via WhatsApp video or audio call. No commute, no waiting room, no stress. Just expert medical attention from the comfort of your home.
+        </p>
+ 
+        <div class="tele-hero__btns">
+          <a
+            href="https://wa.me/2348084632038?text=Hello%20St.%20Nicholas%2C%20I%20would%20like%20to%20book%20a%20telemedicine%20consultation."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp"
+          >
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Start on WhatsApp
+          </a>
+          <a href="tel:08084632038" class="btn-call">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+            Call 08084632038
+          </a>
+        </div>
+ 
+      </div>
+ 
+      <!-- Right: Mock video call UI -->
+      <div class="tele-hero__visual">
+ 
+        <div class="tele-hero__wa-badge">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </div>
+ 
+        <div class="video-frame">
+ 
+          <!-- Doctor photo — replace with real image -->
+          <img
+            src="assets/images/vitaly-gariev-NDOYHZ_98Rw-unsplash.jpg"
+            alt="St. Nicholas Hospital Doctor — Telemedicine"
+            class="video-frame__img"
+          />
+ 
+          <div class="video-frame__overlay"></div>
+ 
+          <!-- Live badge -->
+          <div class="video-live">
+            <div class="video-live__dot"></div>
+            Live
+          </div>
+ 
+          <!-- Timer -->
+          <div class="video-timer" id="teleTimer">00:00</div>
+ 
+          <!-- Doctor info -->
+          <div class="video-doctor-info">
+            <div class="video-doctor-info__name">Dr. Adaeze Obi</div>
+            <div class="video-doctor-info__role">Consultant Physician · St. Nicholas Hospital</div>
+          </div>
+ 
+          <!-- Patient PIP window -->
+          <div class="video-pip">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+ 
+          <!-- Call controls -->
+          <div class="video-controls">
+            <div class="vc-btn vc-btn--mic">
+              <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <div class="vc-btn vc-btn--cam">
+              <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <div class="vc-btn vc-btn--end">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+            </div>
+            <div class="vc-btn vc-btn--chat">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ HOW IT WORKS ══ -->
+  <section class="how-section">
+    <div class="how-inner">
+ 
+      <div class="how-header reveal">
+        <div class="section-eyebrow" style="justify-content:center">
+          <div class="section-eyebrow-line"></div>
+          <span>Simple Process</span>
+        </div>
+        <h2 class="section-title">How It <em>Works</em></h2>
+        <p class="section-sub">Getting care from St. Nicholas has never been easier. Four simple steps and you're speaking to a specialist.</p>
+      </div>
+ 
+      <div class="how-steps">
+ 
+        <div class="how-step reveal" style="transition-delay:0ms">
+          <div class="how-step__num">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+          </div>
+          <h3 class="how-step__title">Call or WhatsApp</h3>
+          <p class="how-step__text">Contact us on <strong>08084632038</strong> via call or WhatsApp to request your telemedicine appointment.</p>
+        </div>
+ 
+        <div class="how-step reveal" style="transition-delay:80ms">
+          <div class="how-step__num">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="how-step__title">Book Your Slot</h3>
+          <p class="how-step__text">Our team schedules you with the right specialist and confirms your video or audio consultation time.</p>
+        </div>
+ 
+        <div class="how-step reveal" style="transition-delay:160ms">
+          <div class="how-step__num">
+            <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3 class="how-step__title">Consult Your Doctor</h3>
+          <p class="how-step__text">Join your WhatsApp video or audio call at the scheduled time and speak directly with your St. Nicholas consultant.</p>
+        </div>
+ 
+        <div class="how-step reveal" style="transition-delay:240ms">
+          <div class="how-step__num">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="how-step__title">Get Meds Delivered</h3>
+          <p class="how-step__text">If prescribed, your medication can be delivered directly to your door. St. Nicholas Hospital cares — even after the call.</p>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ BENEFITS ══ -->
+  <section class="benefits-section">
+    <div class="benefits-inner">
+ 
+      <div class="benefits-header reveal">
+        <div class="section-eyebrow section-eyebrow--light" style="justify-content:center">
+          <div class="section-eyebrow-line"></div>
+          <span>Why Telemedicine</span>
+        </div>
+        <h2 class="section-title section-title--light">
+          World-Class Care,<br>
+          <em>Zero Distance</em>
+        </h2>
+      </div>
+ 
+      <div class="benefits-grid">
+ 
+        <div class="benefit-card reveal" style="transition-delay:0ms">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="benefit-card__title">Save Time</h3>
+          <p class="benefit-card__text">No travel, no waiting room, no Lagos traffic. Your appointment happens exactly when scheduled — on your phone, from anywhere.</p>
+        </div>
+ 
+        <div class="benefit-card reveal" style="transition-delay:80ms">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="benefit-card__title">Same Expert Doctors</h3>
+          <p class="benefit-card__text">You're consulting the same fellowship-trained St. Nicholas specialists — just through a screen. The expertise doesn't change.</p>
+        </div>
+ 
+        <div class="benefit-card reveal" style="transition-delay:160ms">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="benefit-card__title">Perfect for Follow-Ups</h3>
+          <p class="benefit-card__text">Ideal for post-surgery check-ins, chronic condition management, lab result reviews, and prescription renewals without leaving home.</p>
+        </div>
+ 
+        <div class="benefit-card reveal" style="transition-delay:0ms">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="benefit-card__title">Reach Us from Anywhere</h3>
+          <p class="benefit-card__text">Whether you're in Abuja, Port Harcourt, Abuja or outside Nigeria — if you need a St. Nicholas doctor, we are one WhatsApp call away.</p>
+        </div>
+ 
+        <div class="benefit-card reveal" style="transition-delay:80ms">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="benefit-card__title">Medication Delivery</h3>
+          <p class="benefit-card__text">After your consultation, if a prescription is needed, we can arrange for your medication to be delivered straight to your home.</p>
+        </div>
+ 
+        <div class="benefit-card reveal" style="transition-delay:160ms">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="benefit-card__title">Private &amp; Confidential</h3>
+          <p class="benefit-card__text">Your consultation is between you and your doctor — fully private, with the same clinical confidentiality as any in-person visit at St. Nicholas.</p>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ DRUG DELIVERY STRIP ══ -->
+  <section class="delivery-section">
+    <div class="delivery-inner">
+      <div class="delivery-left">
+        <div class="delivery-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div>
+          <div class="delivery-title">Drug Delivery Available</div>
+          <div class="delivery-sub">Prescribed after your teleconsultation? We'll send your medication straight to your door. St. Nicholas Hospital cares.</div>
+        </div>
+      </div>
+      <a
+        href="https://wa.me/2348084632038?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20medication%20delivery%20after%20my%20teleconsultation."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-wa-large"
+      >
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        Enquire on WhatsApp
+      </a>
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ CONTACT CARDS ══ -->
+  <section class="contact-section">
+    <div class="contact-inner">
+ 
+      <!-- WhatsApp -->
+      <div class="contact-card contact-card--wa reveal">
+        <div class="contact-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </div>
+        <div>
+          <div class="contact-card__label">WhatsApp</div>
+          <div class="contact-card__title">Book via WhatsApp</div>
+          <div class="contact-card__sub">Send us a message and we'll schedule your video or audio consultation with the right specialist. Fast, easy, no forms.</div>
+          <div class="contact-card__number" style="margin-top:12px">08084632038</div>
+        </div>
+        <a
+          href="https://wa.me/2348084632038?text=Hello%20St.%20Nicholas%2C%20I%20would%20like%20to%20book%20a%20telemedicine%20consultation."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-wa-large"
+        >
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+ 
+      <!-- Call -->
+      <div class="contact-card contact-card--call reveal" style="transition-delay:100ms">
+        <div class="contact-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+        </div>
+        <div>
+          <div class="contact-card__label">Phone</div>
+          <div class="contact-card__title">Prefer to Call?</div>
+          <div class="contact-card__sub">Call our telemedicine line directly to speak with our team and schedule your consultation with a St. Nicholas specialist.</div>
+          <div class="contact-card__number" style="margin-top:12px">08084632038</div>
+        </div>
+        <a href="tel:08084632038" class="btn-call-large">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+          Call Now
+        </a>
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ BOTTOM CTA ══ -->
+  <section class="tele-cta">
+    <div class="tele-cta__inner reveal">
+      <div class="section-eyebrow" style="justify-content:center; margin-bottom:0">
+        <div class="section-eyebrow-line"></div>
+        <span>Don't Wait</span>
+      </div>
+      <h2 class="tele-cta__title">
+        Your Health Can't<br>
+        <em>Wait for Tomorrow</em>
+      </h2>
+      <p class="tele-cta__sub">
+        Whether it's a minor concern or something that's been bothering you for a while — speak to a St. Nicholas doctor today. Our telemedicine line is open and our specialists are ready.
+      </p>
+      <div class="tele-cta__btns">
+        <a
+          href="https://wa.me/2348084632038?text=Hello%20St.%20Nicholas%2C%20I%20would%20like%20to%20book%20a%20telemedicine%20consultation."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-whatsapp"
+        >
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Start on WhatsApp
+        </a>
+        <a href="services.html" class="btn-call">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          View All Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <div id="footer"></div>
+
+    <script src="/public/index.js" defer></script>
+ 
+</body>
+</html>

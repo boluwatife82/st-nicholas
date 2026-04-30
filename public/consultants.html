@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consultants.html- St. Nicholas Hospital</title>
+    <link rel="icon" type="image/png" href="assets/images/st_Nicholas_logo__1_-removebg-preview.png">
+     <link rel="stylesheet" href="/public/index.css">
+</head>
+<body>
+      <div id="navbar"></div>
+
+     <!-- ══ HERO ══ -->
+  <section class="con-hero">
+    <div class="con-hero__inner">
+      
+      <div class="con-hero__eyebrow">
+        <div class="con-hero__eyebrow-line"></div>
+        <span>Our Medical Experts</span>
+      </div>
+ 
+      <h1 class="con-hero__title">
+        Meet Our World-Class<br>
+        <em>Consultant Specialists</em>
+      </h1>
+ 
+      <p class="con-hero__sub">
+        Every consultant at St. Nicholas Hospital is a fellowship-trained specialist with deep expertise in their field. You are always in the hands of someone who has dedicated their career to your condition.
+      </p>
+ 
+      <div class="con-hero__badges">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          COHSASA Accredited
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Est. 1952
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          200+ Specialists
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          20+ Specialties
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ INTRO + FILTERS ══ -->
+  <section class="con-intro">
+    <div class="con-intro__inner">
+      <div class="con-intro__text">
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <span>Browse Our Specialists</span>
+        </div>
+        <h2 class="con-intro__title">
+          The Right Doctor for<br>
+          <em>Every Condition</em>
+        </h2>
+        <p class="con-intro__sub">
+          Our consultants cover over 20 medical specialties. Hover any card to read about their expertise, then hit <strong>Book Appointment</strong> to get started — your first step toward expert care.
+        </p>
+      </div>
+    </div>
+ 
+    <!-- Filter tabs -->
+    <div class="con-filters">
+      <button class="con-filter active" data-filter="all">All Specialties</button>
+      <button class="con-filter" data-filter="surgery">Surgery</button>
+      <button class="con-filter" data-filter="medicine">Medicine</button>
+      <button class="con-filter" data-filter="womens">Women's Health</button>
+      <button class="con-filter" data-filter="diagnostics">Diagnostics</button>
+      <button class="con-filter" data-filter="paeds">Paediatrics</button>
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ CONSULTANTS GRID ══ -->
+  <section class="con-grid-wrap">
+    <div class="con-grid" id="consultantsGrid">
+ 
+      <!-- ── Card 1 ── -->
+      <div class="con-card" data-cat="surgery">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Emeka Nwosu" class="con-card__photo" />
+          <div class="con-card__initials">EN</div>
+          <div class="con-card__specialty">Cardiothoracic Surgery</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Emeka Nwosu</div>
+          <div class="con-card__creds">MBBS, FWACS, FRCS (Cardiothoracic)</div>
+          <div class="con-card__bio">
+            A fellowship-trained cardiothoracic surgeon with over 18 years of experience. Performed St. Nicholas Hospital's first open-heart surgery in 2019. Specialises in coronary bypass and valve repair.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Cardiothoracic Surgery</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Cardiothoracic Surgery')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 2 ── -->
+      <div class="con-card" data-cat="medicine">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Adaeze Obi" class="con-card__photo" />
+          <div class="con-card__initials">AO</div>
+          <div class="con-card__specialty">Nephrology</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Adaeze Obi</div>
+          <div class="con-card__creds">MBBS, FMCP, Fellowship Nephrology</div>
+          <div class="con-card__bio">
+            A consultant nephrologist leading our award-winning kidney unit. With over 350 transplants performed at SNH, she is one of West Africa's foremost experts in renal disease and dialysis management.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Nephrology</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Nephrology')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 3 ── -->
+      <div class="con-card" data-cat="surgery">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Chukwuemeka Eze" class="con-card__photo" />
+          <div class="con-card__initials">CE</div>
+          <div class="con-card__specialty">Neurosurgery</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Chukwuemeka Eze</div>
+          <div class="con-card__creds">MBBS, FWACS (Neurosurgery)</div>
+          <div class="con-card__bio">
+            A specialist in brain and spinal surgery with sub-specialty training in minimally invasive neurosurgical techniques. Manages complex tumour resections, spinal trauma and cerebrovascular conditions.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Neurosurgery</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Neurosurgery')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 4 ── -->
+      <div class="con-card" data-cat="womens">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Funke Adeleke" class="con-card__photo" />
+          <div class="con-card__initials">FA</div>
+          <div class="con-card__specialty">Obstetrics &amp; Gynaecology</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Funke Adeleke</div>
+          <div class="con-card__creds">MBBS, MRCOG, FWACS</div>
+          <div class="con-card__bio">
+            A consultant obstetrician and gynaecologist with over 15 years of practice. Trained at the Royal College of Obstetricians and Gynaecologists, London. Specialises in high-risk pregnancies and laparoscopic surgery.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Obstetrics &amp; Gynaecology</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Obstetrics & Gynaecology')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 5 ── -->
+      <div class="con-card" data-cat="medicine">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Rotimi Alade" class="con-card__photo" />
+          <div class="con-card__initials">RA</div>
+          <div class="con-card__specialty">Cardiology</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Rotimi Alade</div>
+          <div class="con-card__creds">MBBS, FMCP, Fellowship Cardiology</div>
+          <div class="con-card__bio">
+            A consultant cardiologist specialising in interventional cardiology and heart failure management. Performs coronary angiography and pacemaker implantations, bringing sub-specialist precision to cardiac care.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Cardiology</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Cardiology')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 6 ── -->
+      <div class="con-card" data-cat="surgery">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Yemi Coker" class="con-card__photo" />
+          <div class="con-card__initials">YC</div>
+          <div class="con-card__specialty">Orthopaedic Surgery</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Yemi Coker</div>
+          <div class="con-card__creds">MBBS, FWACS (Orthopaedics), MCh Orth</div>
+          <div class="con-card__bio">
+            An orthopaedic surgeon with expertise in joint replacement, sports injuries and spinal disorders. Trained at Edinburgh and Johns Hopkins, bringing international surgical standards to every procedure.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Orthopaedics</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Orthopaedic Surgery')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 7 ── -->
+      <div class="con-card" data-cat="paeds">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpgg" alt="Dr. Blessing Okonkwo" class="con-card__photo" />
+          <div class="con-card__initials">BO</div>
+          <div class="con-card__specialty">Paediatrics</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Blessing Okonkwo</div>
+          <div class="con-card__creds">MBBS, FWACP (Paediatrics)</div>
+          <div class="con-card__bio">
+            A Fellow of the West African College of Physicians specialising in paediatric care from newborns to adolescents. Leads our neonatal unit with compassionate expertise in childhood illness and development.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Paediatrics</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Paediatrics')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 8 ── -->
+      <div class="con-card" data-cat="medicine">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Hakeem Salami" class="con-card__photo" />
+          <div class="con-card__initials">HS</div>
+          <div class="con-card__specialty">Oncology</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Hakeem Salami</div>
+          <div class="con-card__creds">MBBS, FMCP, Fellowship Oncology</div>
+          <div class="con-card__bio">
+            Consultant oncologist heading our pioneering Oncology clinic — the first private oncology unit in Nigeria. Specialises in haematological malignancies and solid tumours with a focus on personalised treatment plans.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Oncology</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Oncology')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 9 ── -->
+      <div class="con-card" data-cat="diagnostics">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Tolu Fashola" class="con-card__photo" />
+          <div class="con-card__initials">TF</div>
+          <div class="con-card__specialty">Radiology</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Tolu Fashola</div>
+          <div class="con-card__creds">MBBS, FMCR, Fellowship Radiology</div>
+          <div class="con-card__bio">
+            A consultant radiologist with advanced training in interventional radiology and MRI reporting. Leads a team delivering rapid diagnostic turnaround across CT, MRI, ultrasound and digital X-ray.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Radiology</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Radiology')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 10 ── -->
+      <div class="con-card" data-cat="medicine">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Sola Adeyemi" class="con-card__photo" />
+          <div class="con-card__initials">SA</div>
+          <div class="con-card__specialty">Internal Medicine</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Sola Adeyemi</div>
+          <div class="con-card__creds">MBBS, FMCP (Internal Medicine)</div>
+          <div class="con-card__bio">
+            A senior consultant physician managing complex medical conditions including diabetes, hypertension and infectious diseases. Known for thorough diagnosis and clear, patient-centred communication.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Internal Medicine</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Internal Medicine')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 11 ── -->
+      <div class="con-card" data-cat="womens">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Ngozi Eze" class="con-card__photo" />
+          <div class="con-card__initials">NE</div>
+          <div class="con-card__specialty">Fertility &amp; IVF</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Ngozi Eze</div>
+          <div class="con-card__creds">MBBS, MRCOG, Dip Reproductive Medicine</div>
+          <div class="con-card__bio">
+            A reproductive medicine specialist at the hospital that performed Nigeria's first IVF in 1988. Brings cutting-edge fertility treatment options including IVF, IUI and egg freezing to patients across West Africa.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">Fertility &amp; IVF</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('Fertility & IVF')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ── Card 12 ── -->
+      <div class="con-card" data-cat="surgery">
+        <div class="con-card__photo-wrap">
+          <img src="assets/images/nobg.jpg" alt="Dr. Kola Ogundimu" class="con-card__photo" />
+          <div class="con-card__initials">KO</div>
+          <div class="con-card__specialty">General Surgery</div>
+        </div>
+        <div class="con-card__body">
+          <div class="con-card__name">Dr. Kola Ogundimu</div>
+          <div class="con-card__creds">MBBS, FWACS (General Surgery)</div>
+          <div class="con-card__bio">
+            A consultant general surgeon with advanced laparoscopic skills. Handles abdominal, breast, thyroid and hernia surgeries with precision, offering minimally invasive options that reduce recovery time.
+          </div>
+          <div class="con-card__divider"></div>
+          <div class="con-card__cta">
+            <span class="con-card__cta-label">General Surgery</span>
+            <button class="con-card__book-btn" onclick="openBookingModal('General Surgery')">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- Empty state -->
+    <div class="con-empty" id="conEmpty">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>No consultants found for this specialty. Please try a different filter.</p>
+    </div>
+ 
+  </section>
+ 
+ 
+  <!-- ══ CTA STRIP ══ -->
+  <section class="con-cta">
+    <div class="con-cta__inner">
+ 
+      <div>
+        <div class="cta-eyebrow">
+          <div class="cta-eyebrow-line"></div>
+          <span>Don't Wait</span>
+        </div>
+        <h2 class="cta-title">
+          Your Health Deserves<br>
+          <em>Expert Attention Today</em>
+        </h2>
+        <p class="cta-sub">
+          Don't wait for a condition to worsen. Our consultants have same-week appointments available across all five Lagos branches. Fast-track booking takes under two minutes — and our team will confirm within two hours.
+        </p>
+      </div>
+ 
+      <div class="cta-btns">
+        <button class="btn-cyan" onclick="openBookingModal('')">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book Appointment
+        </button>
+        <a href="tel:08022908484" class="btn-outline">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6"/></svg>
+          Call Us Now
+        </a>
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- ══ BOOKING MODAL ══ -->
+  <div class="modal-bg" id="conModalBg">
+    <div class="modal">
+      <button class="modal-x" id="conCloseModal">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 class="modal-title">Book Appointment</h2>
+      <p class="modal-sub" id="conModalSub">Fast-Track Specialist Booking</p>
+ 
+      <div class="f-field">
+        <label class="f-label" for="con-name">Full Name</label>
+        <input class="f-input" type="text" id="con-name" placeholder="e.g. Chidi Okonkwo" />
+      </div>
+      <div class="f-field">
+        <label class="f-label" for="con-phone">Phone Number</label>
+        <input class="f-input" type="tel" id="con-phone" placeholder="+234 800 000 0000" />
+      </div>
+      <div class="f-field">
+      <label class="f-label" for="m-email">Email Address</label>
+      <input class="f-input" type="email" id="m-email" placeholder="e.g. Chidi Okonkwo@gmail.com" />
+    </div>
+      <div class="f-row">
+        <div class="f-field">
+          <label class="f-label" for="con-branch">Branch</label>
+          <select class="f-select" id="con-branch">
+            <option value="">Select branch</option>
+            <option value="lagos-island">Lagos Island (Main)</option>
+            <option value="vi">Victoria Island</option>
+            <option value="maryland">Maryland</option>
+            <option value="lekki">Lekki (LFZ)</option>
+            <option value="surulere">Surulere</option>
+          </select>
+        </div>
+        <div class="f-field">
+          <label class="f-label" for="con-spec">Specialty</label>
+          <select class="f-select" id="con-spec">
+            <option value="">Select specialty</option>
+            <option value="cardiothoracic">Cardiothoracic Surgery</option>
+            <option value="nephrology">Nephrology (Kidney)</option>
+            <option value="neurosurgery">Neurosurgery</option>
+            <option value="obstetrics">Obstetrics &amp; Gynaecology</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="orthopaedics">Orthopaedics</option>
+            <option value="paediatrics">Paediatrics</option>
+            <option value="oncology">Oncology</option>
+            <option value="radiology">Radiology</option>
+            <option value="internal-medicine">Internal Medicine</option>
+            <option value="fertility">Fertility &amp; IVF</option>
+            <option value="general-surgery">General Surgery</option>
+          </select>
+        </div>
+      </div>
+      <div class="f-field">
+        <label class="f-label" for="con-date">Preferred Date</label>
+        <input class="f-input" type="date" id="con-date" />
+      </div>
+      <button class="btn-sub" id="conSubmitBtn">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        Request Appointment
+      </button>
+      <p class="f-note">Our team confirms your booking within 2 hours</p>
+    </div>
+  </div>
+  <!-- ══ BOOKING MODAL ══ -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <button class="modal-x" id="closeModal"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <h2 class="modal-title">Fast-Track Booking</h2>
+    <p class="modal-sub">Book your appointment in under 2 minutes</p>
+    <div class="f-field"><label class="f-label" for="m-name">Full Name</label><input class="f-input" type="text" id="m-name" placeholder="e.g. Chidi Okonkwo" /></div>
+    <div class="f-field"><label class="f-label" for="m-phone">Phone Number</label><input class="f-input" type="tel" id="m-phone" placeholder="+234 800 000 0000" /></div>
+    <div class="f-row">
+      <div class="f-field"><label class="f-label" for="m-branch">Branch</label>
+        <select class="f-select" id="m-branch">
+          <option value="">Select branch</option>
+          <option value="lagos-island">Lagos Island (Main)</option>
+          <option value="vi">Victoria Island</option>
+          <option value="maryland">Maryland</option>
+          <option value="lekki">Lekki (LFZ)</option>
+          <option value="surulere">Surulere</option>
+        </select>
+      </div>
+      <div class="f-field"><label class="f-label" for="m-spec">Specialty</label>
+        <select class="f-select" id="m-spec">
+          <option value="">Select specialty</option>
+          <option value="general">General Practice</option>
+          <option value="paediatrics">Paediatrics</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="neurology">Neurology</option>
+          <option value="neurosurgery">Neurosurgery</option>
+          <option value="orthopaedics">Orthopaedics &amp; Trauma</option>
+          <option value="obstetrics">Obstetrics &amp; Gynaecology</option>
+          <option value="nephrology">Nephrology (Kidney Care)</option>
+          <option value="oncology">Oncology</option>
+          <option value="ent">ENT (Ear, Nose &amp; Throat)</option>
+          <option value="general-surgery">General Surgery</option>
+          <option value="laboratory">Laboratory Services</option>
+          <option value="radiology">Radiology</option>
+          <option value="emergency">Accident &amp; Emergency (A&amp;E)</option>
+        </select>
+      </div>
+    </div>
+    <div class="f-field"><label class="f-label" for="m-date">Preferred Date</label><input class="f-input" type="date" id="m-date" /></div>
+    <button class="btn-sub" id="submitBtn"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Request Appointment</button>
+    <p class="f-note">Our team confirms your booking within 2 hours</p>
+  </div>
+</div>
+ 
+<!-- ══ WHATSAPP ══ -->
+<div class="wa" id="wa">
+  <a href="https://wa.me/2348022908484?text=Hello%20St.%20Nicholas%2C%20I%20would%20like%20to%20book%20an%20appointment." class="wa-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+</div>
+ 
+<!-- ══ LANGUAGE FLOAT ══ -->
+<div class="lang-float" id="langFloat">
+  <div class="lang-float-panel" id="langFloatPanel">
+    <button class="lang-opt active" data-lang="en">🇬🇧 &nbsp;English</button>
+    <button class="lang-opt" data-lang="fr">🇫🇷 &nbsp;Français</button>
+    <div class="lang-divider"></div>
+    <button class="lang-opt" data-lang="yo">🇳🇬 &nbsp;Yorùbá</button>
+    <button class="lang-opt" data-lang="ha">🇳🇬 &nbsp;Hausa</button>
+    <button class="lang-opt" data-lang="ig">🇳🇬 &nbsp;Igbo</button>
+  </div>
+  <button class="lang-float-btn" id="langFloatBtn">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    <span id="langFloatLabel">English</span>
+    <svg class="lang-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+</div>
+ 
+ 
+  <div id="footer"></div>
+
+    <script src="/public/index.js" defer></script>
+</body>
+</html>

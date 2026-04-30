@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services — St. Nicholas Hospital Lagos</title>
+  <meta name="description" content="Explore the full range of specialist medical services at St. Nicholas Hospital Lagos — from A&E and dialysis to oncology, neurosurgery, and UK TB screening." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="icon" type="image/png" href="assets/images/st_Nicholas_logo__1_-removebg-preview.png">
+    <link rel="stylesheet" href="/public/index.css">
+</head>
+<body>
+   <div id="navbar"></div>
+<section class="sv-hero">
+  <div class="sv-hero__dots"></div>
+  <div class="sv-hero__glow"></div>
+  <div class="sv-gold-rule"></div>
+  <div class="sv-hero__inner">
+    <div class="sv-hero__eyebrow"><div class="sv-hero__eyebrow-line"></div><span>What We Offer</span></div>
+    <h1 class="sv-hero__title">Our Medical <em>Services</em></h1>
+    <p class="sv-hero__sub">Welcome to the services section of St. Nicholas Hospital's website. Here you will find details of the services we provide across our facilities — from specialist clinics to emergency care, diagnostics, and surgical procedures. Click any service on the left to learn more.</p>
+  </div>
+</section>
+
+<div class="sv-body">
+
+  <aside class="sv-sidebar">
+    <div class="sv-sidebar-search">
+      <div class="sv-sidebar-search-wrap">
+        <input type="text" id="svSearch" placeholder="Search services..." autocomplete="off" />
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+    </div>
+    <div class="sv-sidebar-list">
+      
+        <button class="sv-sidebar-item" data-id="ae" onclick="showService('ae')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Accident & Emergency</span>
+            <span class="sv-sidebar-item__short">24/7 emergency care for all ages</span>
+          </div>
+          <span class="sv-item-tag sv-tag--urgent">24/7</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="ambulance" onclick="showService('ambulance')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<rect x="2" y="7" width="20" height="13" rx="2"/><path d="M16 7V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3"/><path d="M12 12v4"/><path d="M10 14h4"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Ambulance Services</span>
+            <span class="sv-sidebar-item__short">Rapid, equipped emergency transport</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="antenatal" onclick="showService('antenatal')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="8" r="5"/><path d="M12 13v8"/><path d="M9 18h6"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Antenatal Care</span>
+            <span class="sv-sidebar-item__short">Expert care through every stage of pregnancy</span>
+          </div>
+          <span class="sv-item-tag sv-tag--womens">Women's Health</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="dietetics" onclick="showService('dietetics')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Dietetics</span>
+            <span class="sv-sidebar-item__short">Clinical nutrition and dietary management</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="dialysis" onclick="showService('dialysis')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Dialysis</span>
+            <span class="sv-sidebar-item__short">World-class renal replacement therapy</span>
+          </div>
+          <span class="sv-item-tag sv-tag--pioneer">Pioneering</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="endoscopy" onclick="showService('endoscopy')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="12" r="10"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M8 13s1.5 2 4 2 4-2 4-2"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Endoscopy</span>
+            <span class="sv-sidebar-item__short">Minimally invasive GI diagnosis & treatment</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="gp" onclick="showService('gp')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">General Practice</span>
+            <span class="sv-sidebar-item__short">Your first point of care for everyday health</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="icu" onclick="showService('icu')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Intensive Care Unit</span>
+            <span class="sv-sidebar-item__short">Round-the-clock critical care monitoring</span>
+          </div>
+          <span class="sv-item-tag sv-tag--urgent">Critical Care</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="nephrology" onclick="showService('nephrology')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Nephrology Unit</span>
+            <span class="sv-sidebar-item__short">Specialist kidney disease care & transplant</span>
+          </div>
+          <span class="sv-item-tag sv-tag--pioneer">Pioneering</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="og" onclick="showService('og')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="8" r="5"/><path d="M12 13v8"/><path d="M9 18h6"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Obstetrics & Gynaecology</span>
+            <span class="sv-sidebar-item__short">Complete women's healthcare</span>
+          </div>
+          <span class="sv-item-tag sv-tag--womens">Women's Health</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="oncology" onclick="showService('oncology')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Oncology</span>
+            <span class="sv-sidebar-item__short">Comprehensive cancer care & blood disease treatment</span>
+          </div>
+          <span class="sv-item-tag sv-tag--pioneer">Pioneer</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="lab" onclick="showService('lab')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0h-4"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Laboratory Services</span>
+            <span class="sv-sidebar-item__short">Accurate, rapid diagnostic testing</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="neurosurgery" onclick="showService('neurosurgery')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Neurosurgery</span>
+            <span class="sv-sidebar-item__short">Advanced brain and spinal surgical care</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="nursing" onclick="showService('nursing')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Nursing Service</span>
+            <span class="sv-sidebar-item__short">Dedicated, internationally trained nursing team</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="orthopaedics" onclick="showService('orthopaedics')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Orthopaedics & Trauma</span>
+            <span class="sv-sidebar-item__short">Bone, joint and trauma surgery</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="paediatrics" onclick="showService('paediatrics')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="8" r="4"/><path d="M12 14c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Paediatrics</span>
+            <span class="sv-sidebar-item__short">Expert child healthcare from birth to adolescence</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="pharmacy" onclick="showService('pharmacy')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8L6 7h12l-2-4z"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Pharmacy</span>
+            <span class="sv-sidebar-item__short">On-site dispensing & medication advice</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="radiology" onclick="showService('radiology')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Radiology</span>
+            <span class="sv-sidebar-item__short">Advanced imaging & diagnostic radiology</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="vascular" onclick="showService('vascular')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">Thoracic & Vascular Surgery</span>
+            <span class="sv-sidebar-item__short">Heart, lung and major blood vessel surgery</span>
+          </div>
+          
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="sv-sidebar-item" data-id="uktb" onclick="showService('uktb')">
+          <div class="sv-sidebar-item__icon">
+            <svg viewBox="0 0 24 24"><<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>/></svg>
+          </div>
+          <div class="sv-sidebar-item__body">
+            <span class="sv-sidebar-item__name">UK TB Screening</span>
+            <span class="sv-sidebar-item__short">UKVI-approved tuberculosis testing</span>
+          </div>
+          <span class="sv-item-tag sv-tag--uk">UKVI Approved</span>
+          <svg class="sv-sidebar-item__arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+    </div>
+  </aside>
+
+  <div class="sv-detail-area" id="svDetailArea">
+
+    <div class="sv-detail-empty" id="svEmptyState">
+      <div class="sv-detail-empty__icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+      </div>
+      <h3>Select a Service</h3>
+      <p>Click on any service from the list on the left to view full details, our approach, and the consultants in charge.</p>
+    </div>
+
+    
+      <div class="sv-detail-panel" id="sv-panel-ae" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Accident & Emergency Unit</h2>
+            <p class="sv-detail-intro">The Accident and Emergency Unit of St. Nicholas Hospital assesses and treats people with serious injuries, sudden severe illness or a medical emergency. It is open 24 hours a day, 365 days of the year.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>An air-conditioned out-patient treatment room is provided, equipped with a modern operating table and anaesthetic apparatus. The unit also has an Intensive Therapy area for resuscitation of emergency cases — particularly for babies and accident victims.</p>
+      <h4 class="sv-detail-subhead">We Respond Promptly To</h4>
+      <div class="sv-detail-tags">
+        <span>Orthopaedics &amp; Trauma</span><span>General Surgery</span>
+        <span>Urological Emergencies</span><span>Neurosurgical Emergencies</span>
+        <span>ENT &amp; Ophthalmology</span><span>Obstetrics &amp; Gynaecology</span>
+        <span>Paediatrics</span><span>Medical Emergencies</span>
+      </div>
+      <h4 class="sv-detail-subhead">Our Team</h4>
+      <p>Our Emergency Care Team provides high-quality, compassionate care 24 hours a day, seven days a week. Our dedicated team consists of Medical Officers, Residents, Consultants, Nurses and Paramedical staff — committed to giving every patient the best chance of recovery.</p>
+      <h4 class="sv-detail-subhead">Who Should Come to A&amp;E?</h4>
+      <div class="sv-detail-list">
+        <div class="sv-detail-list-item"><span>01</span>Unconsciousness</div>
+        <div class="sv-detail-list-item"><span>02</span>Heavy blood loss</div>
+        <div class="sv-detail-list-item"><span>03</span>Suspected broken bones</div>
+        <div class="sv-detail-list-item"><span>04</span>Deep wounds such as stab wounds</div>
+        <div class="sv-detail-list-item"><span>05</span>Suspected heart attack</div>
+        <div class="sv-detail-list-item"><span>06</span>Difficulty in breathing</div>
+      </div>
+      <div class="sv-detail-note">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <p><strong>Not an emergency?</strong> Patients with less serious symptoms should consider your local Pharmacist or our Outpatient Clinics, which offer treatment for many problems and have shorter wait times.</p>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. A. Ogunleye — Emergency Medicine</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. F. Adeyemi — Trauma Surgery</span></div></div>
+          <div class="sv-detail-cta">
+                  <button class="btn-book" data-i18n="book_btn" id="openModal">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Book Appointment
+                </button> 
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-ambulance" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<rect x="2" y="7" width="20" height="13" rx="2"/><path d="M16 7V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3"/><path d="M12 12v4"/><path d="M10 14h4"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Ambulance Services</h2>
+            <p class="sv-detail-intro">St. Nicholas Hospital operates a fleet of well-equipped ambulances staffed by trained paramedical personnel, available for emergency evacuations and inter-facility transfers across Lagos.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our ambulances are fully equipped with life-support equipment, oxygen, defibrillators, and essential emergency medications to provide immediate care during transport. Our trained paramedics ensure that patients receive continuous monitoring and stabilisation from the scene to the hospital.</p>
+      <h4 class="sv-detail-subhead">When to Call an Ambulance</h4>
+      <div class="sv-detail-list">
+        <div class="sv-detail-list-item"><span>01</span>Life-threatening emergencies where movement risks are high</div>
+        <div class="sv-detail-list-item"><span>02</span>Suspected heart attack or stroke</div>
+        <div class="sv-detail-list-item"><span>03</span>Major trauma or road traffic accidents</div>
+        <div class="sv-detail-list-item"><span>04</span>Inter-hospital transfers requiring medical escort</div>
+      </div>
+      <div class="sv-detail-note">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+        <p><strong>Emergency line:</strong> Call <a href="tel:08022908484">0802 290 8484</a> to request ambulance dispatch.</p>
+      </div>
+          
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Appointment
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-antenatal" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="8" r="5"/><path d="M12 13v8"/><path d="M9 18h6"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Antenatal Care</h2>
+            <p class="sv-detail-intro">Our Antenatal Care programme provides comprehensive support and monitoring for expectant mothers throughout pregnancy — from confirmation through to delivery and postnatal care.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our experienced obstetricians and midwives provide personalised care plans for each expectant mother. Regular monitoring, screening, and education are central to our antenatal programme, ensuring the safest possible outcome for both mother and baby.</p>
+      <h4 class="sv-detail-subhead">What We Offer</h4>
+      <div class="sv-detail-tags">
+        <span>Booking appointments &amp; booking bloods</span><span>Growth scans &amp; 4D ultrasound</span>
+        <span>Glucose tolerance testing</span><span>Anomaly screening</span>
+        <span>High-risk pregnancy management</span><span>Birthing plan consultation</span>
+        <span>Postnatal follow-up</span>
+      </div>
+      <p style="margin-top:16px">We support high-risk pregnancies including gestational diabetes, hypertension in pregnancy, multiple pregnancies, and previous obstetric complications.</p>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. T. Olawale — Consultant Obstetrician & Gynaecologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Mrs. A. Nwosu — Senior Midwife</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-dietetics" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Dietetics</h2>
+            <p class="sv-detail-intro">Our Dietetics service provides evidence-based nutritional assessment and dietary management for patients with a wide range of medical conditions.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our registered dietitians work closely with the clinical team to develop individualised nutrition plans that support recovery, manage chronic conditions, and improve overall health outcomes.</p>
+      <h4 class="sv-detail-subhead">Conditions We Support</h4>
+      <div class="sv-detail-tags">
+        <span>Diabetes mellitus</span><span>Renal disease &amp; dialysis nutrition</span>
+        <span>Cancer &amp; oncology nutrition</span><span>Cardiovascular disease</span>
+        <span>Malnutrition &amp; undernutrition</span><span>Obesity management</span>
+        <span>Paediatric feeding difficulties</span><span>Post-surgical recovery nutrition</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Mrs. B. Adegoke — Registered Dietitian</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Book Appointment
+              </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-dialysis" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Dialysis Unit</h2>
+            <p class="sv-detail-intro">The Dialysis Unit of St. Nicholas Hospital is dedicated to improving health outcomes for patients with end-stage renal disease (ESRD). We operate one of the busiest privately-owned dialysis centres in Lagos.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Dialysis is a medical procedure in which the functions of a kidney — removing metabolic waste and excess water — are taken over by a machine. This may be done temporarily (days or weeks) or over a long period (years). With 15,000 new cases of kidney failure occurring every year in Nigeria, dialysis is a critical service.</p>
+      <h4 class="sv-detail-subhead">Our Unit</h4>
+      <div class="sv-detail-tags">
+        <span>10-bed dedicated dialysis unit</span><span>Separate ICU dialysis unit for critically ill</span>
+        <span>6 days per week service</span><span>24-hour on-call for emergencies</span>
+        <span>Home dialysis support programme</span>
+      </div>
+      <p style="margin-top:16px">Our team includes specialist nephrology nurses with extensive renal nursing experience, renal technicians, and nutritionists — all working together to provide the best possible dialysis care.</p>
+      <div class="sv-detail-note">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <p>St. Nicholas was the <strong>first private hospital in Nigeria</strong> to open a dialysis and kidney transplant centre — with over 350 successful transplants to date, representing 80% of all transplants in sub-Saharan Africa.</p>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. K. Bamgbola — Consultant Nephrologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. O. Adesanya — Nephrologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Sr. M. Okafor — Senior Nephrology Nurse</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-endoscopy" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="12" r="10"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M8 13s1.5 2 4 2 4-2 4-2"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Endoscopy & Colonoscopy</h2>
+            <p class="sv-detail-intro">Our Endoscopy unit performs minimally invasive procedures to diagnose and treat conditions of the gastrointestinal tract, using the latest fibre-optic and digital endoscopy equipment.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Endoscopy allows our specialists to directly view the inner lining of the digestive system — from the oesophagus to the colon — without the need for open surgery. Our team performs both diagnostic and therapeutic procedures with short recovery times.</p>
+      <h4 class="sv-detail-subhead">Procedures We Perform</h4>
+      <div class="sv-detail-tags">
+        <span>Upper GI endoscopy (OGD)</span><span>Colonoscopy</span>
+        <span>Flexible sigmoidoscopy</span><span>ERCP</span>
+        <span>Endoscopic biopsy</span><span>Polypectomy</span>
+        <span>Barrett's oesophagus surveillance</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. C. Nwachukwu — Consultant Gastroenterologist</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-gp" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">General Practice</h2>
+            <p class="sv-detail-intro">Our General Practice team provides primary care for patients of all ages — from routine consultations and health screenings to management of chronic conditions and specialist referrals.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our GPs are experienced, compassionate clinicians who serve as your first point of contact with the hospital. They coordinate your care, manage your ongoing health needs, and connect you with specialist services when required.</p>
+      <h4 class="sv-detail-subhead">What We Offer</h4>
+      <div class="sv-detail-tags">
+        <span>Routine consultations</span><span>Chronic disease management</span>
+        <span>Health screenings &amp; check-ups</span><span>Vaccinations &amp; immunisations</span>
+        <span>Sick notes &amp; medical certificates</span><span>Specialist referrals</span>
+        <span>Travel health advice</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. I. Okonkwo — General Practitioner</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. S. Bello — Family Medicine Physician</span></div></div>
+          <div class="sv-detail-cta">
+            <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-icu" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Intensive Care Unit (ICU)</h2>
+            <p class="sv-detail-intro">The Intensive Care Unit at St. Nicholas Hospital provides round-the-clock specialist monitoring and treatment for critically ill patients requiring close surveillance and advanced life support.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our ICU is staffed 24 hours a day by experienced intensivists, specialist nurses, and allied health professionals. The unit is equipped with advanced monitoring systems, ventilators, and life support equipment to manage the most complex and unstable patients.</p>
+      <h4 class="sv-detail-subhead">Conditions Managed</h4>
+      <div class="sv-detail-tags">
+        <span>Post-surgical critical care</span><span>Respiratory failure &amp; ventilation</span>
+        <span>Sepsis &amp; multi-organ failure</span><span>Cardiac monitoring post-MI</span>
+        <span>Neurological emergencies</span><span>Renal failure</span>
+        <span>Drug overdose &amp; poisoning</span>
+      </div>
+      <p style="margin-top:16px">Family communication is a priority in our ICU — our team provides regular updates and family liaison support throughout a patient's stay.</p>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. O. Fashola — Consultant Intensivist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. A. Ibrahim — Critical Care Physician</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Appointment
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-nephrology" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Nephrology Unit</h2>
+            <p class="sv-detail-intro">Our Nephrology Unit is one of the most advanced renal care units in Nigeria, providing specialist management of kidney disease from early-stage CKD through to transplantation.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>We were the first private hospital in Nigeria to perform a successful kidney transplant and remain Nigeria's leading transplant centre, having performed over 350 successful transplants. Our nephrologists manage the full spectrum of kidney disease.</p>
+      <h4 class="sv-detail-subhead">Services</h4>
+      <div class="sv-detail-tags">
+        <span>Chronic Kidney Disease (CKD) management</span><span>Kidney transplant programme</span>
+        <span>Haemodialysis</span><span>Peritoneal dialysis</span>
+        <span>Renal hypertension</span><span>Glomerulonephritis</span>
+        <span>Post-transplant follow-up</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. K. Bamgbola — Consultant Nephrologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. M. Adeleke — Transplant Specialist</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Appointment
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-og" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="8" r="5"/><path d="M12 13v8"/><path d="M9 18h6"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Obstetrics & Gynaecology</h2>
+            <p class="sv-detail-intro">Our Obstetrics & Gynaecology department provides a full range of women's health services — from routine gynaecological care and fertility consultations to high-risk obstetric management and surgical procedures.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our experienced consultants offer compassionate, expert care at every stage of a woman's life. Whether you are seeking routine screening, managing a gynaecological condition, or navigating pregnancy, our team is here for you.</p>
+      <h4 class="sv-detail-subhead">Our Services</h4>
+      <div class="sv-detail-tags">
+        <span>Antenatal care &amp; delivery</span><span>High-risk pregnancy management</span>
+        <span>Gynaecological surgery</span><span>Fertility &amp; IVF consultations</span>
+        <span>Menopause management</span><span>Cervical screening &amp; colposcopy</span>
+        <span>Fibroid treatment</span><span>Laparoscopic procedures</span>
+      </div>
+      <div class="sv-detail-note">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <p>St. Nicholas performed Nigeria's <strong>first successful IVF</strong> in 1988.</p>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. T. Olawale — Consultant Obstetrician & Gynaecologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. N. Eze — Gynaecologist</span></div></div>
+          <div class="sv-detail-cta">
+           
+              <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-oncology" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Oncology</h2>
+            <p class="sv-detail-intro">St. Nicholas Hospital was the first private hospital in Nigeria to run a dedicated Oncology clinic. Our service focuses on all cancers and complex blood diseases in the adult population.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our oncology team provides comprehensive cancer care — from initial diagnosis, staging, and treatment planning through to chemotherapy, supportive care, and long-term follow-up. We treat the patient holistically, not just the disease.</p>
+      <h4 class="sv-detail-subhead">Cancers We Treat</h4>
+      <div class="sv-detail-tags">
+        <span>Breast cancer</span><span>Colorectal cancer</span>
+        <span>Lung cancer</span><span>Prostate cancer</span>
+        <span>Cervical cancer</span><span>Haematological malignancies</span>
+        <span>Lymphoma</span><span>Leukaemia</span>
+      </div>
+      <p style="margin-top:16px">All inpatient oncology and haematology admissions are managed at our Lagos Island main branch under the direct care of our specialist oncology team.</p>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. P. Oguike — Consultant Oncologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. A. Lawal — Haematologist</span></div></div>
+          <div class="sv-detail-cta">
+            <button class="btn-book" data-i18n="book_btn" id="openModal">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Appointment
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-lab" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0h-4"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Laboratory Services</h2>
+            <p class="sv-detail-intro">The Laboratory Services of St. Nicholas Hospital provides accurate and timely results, contributing immensely to the care of our patients. More than three-quarters of all medical diagnoses rely on laboratory investigations.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our laboratory operates to international standards with state-of-the-art analysers and a team of experienced medical laboratory scientists. We offer both routine and specialist testing with rapid turnaround times for urgent cases.</p>
+      <h4 class="sv-detail-subhead">Tests Available</h4>
+      <div class="sv-detail-tags">
+        <span>Haematology &amp; full blood count</span><span>Biochemistry panels</span>
+        <span>Microbiology &amp; culture</span><span>Histopathology &amp; cytology</span>
+        <span>Hormonal assays</span><span>Tumour markers</span>
+        <span>Blood banking &amp; transfusion</span><span>COVID-19 &amp; infectious disease panels</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. Y. Obi — Consultant Pathologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Mr. D. Nwosu — Chief Medical Laboratory Scientist</span></div></div>
+          <div class="sv-detail-cta">
+            <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-neurosurgery" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Neurosurgery</h2>
+            <p class="sv-detail-intro">Our Neurosurgery department provides advanced surgical management of conditions affecting the brain, spine, and peripheral nervous system.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our neurosurgeons are experienced in managing the full spectrum of neurosurgical conditions, from elective tumour resections to emergency spinal decompression. We work closely with our neurology, radiology, and ICU teams to deliver comprehensive neurosurgical care.</p>
+      <h4 class="sv-detail-subhead">Conditions Treated</h4>
+      <div class="sv-detail-tags">
+        <span>Brain tumours</span><span>Spinal disc prolapse</span>
+        <span>Traumatic brain injury</span><span>Hydrocephalus</span>
+        <span>Spinal stenosis</span><span>Peripheral nerve injuries</span>
+        <span>Vascular malformations</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Prof. G. Okonkwo — Consultant Neurosurgeon</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. F. Abiodun — Neurosurgeon</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-nursing" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Nursing Service</h2>
+            <p class="sv-detail-intro">St. Nicholas Hospital is proud to have over 100 double-qualified nurses dedicated to delivering professional, compassionate patient care across all our departments and branches.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our nursing team is central to the quality of care our patients receive. Our nurses are trained to international standards and are committed to patient safety, dignity, and comfort at every stage of care.</p>
+      <h4 class="sv-detail-subhead">Our Nursing Specialties</h4>
+      <div class="sv-detail-tags">
+        <span>ICU / Critical care nursing</span><span>Dialysis &amp; renal nursing</span>
+        <span>Midwifery &amp; obstetric nursing</span><span>Paediatric nursing</span>
+        <span>Oncology nursing</span><span>Theatre nursing</span>
+        <span>Emergency nursing</span>
+      </div>
+      <div class="sv-detail-note">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <p>St. Nicholas is the <strong>first privately owned hospital in Nigeria</strong> certified to offer practical internship to BNSc nurses.</p>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Sr. C. Eze — Director of Nursing</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Sr. A. Balogun — Chief Nursing Officer</span></div></div>
+          <div class="sv-detail-cta">
+            <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-orthopaedics" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Orthopaedics & Trauma Unit</h2>
+            <p class="sv-detail-intro">Our Orthopaedics & Trauma department provides expert surgical and non-surgical management of bone, joint, and soft tissue conditions — including emergency trauma care.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>From sports injuries to complex joint replacements, our consultant orthopaedic surgeons deliver world-class outcomes using modern techniques including arthroscopic and minimally invasive surgery. Our trauma team is integrated with our 24-hour A&E service.</p>
+      <h4 class="sv-detail-subhead">Conditions We Treat</h4>
+      <div class="sv-detail-tags">
+        <span>Hip &amp; knee replacement</span><span>Fracture management</span>
+        <span>Sports injuries</span><span>Spinal disorders</span>
+        <span>Shoulder &amp; elbow surgery</span><span>Foot &amp; ankle disorders</span>
+        <span>Paediatric orthopaedics</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. B. Adekunle — Consultant Orthopaedic Surgeon</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. E. Chukwu — Trauma Surgeon</span></div></div>
+          <div class="sv-detail-cta">
+            <button class="uktb-cta" id="openTbModal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book TB Test
+            </button> 
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-paediatrics" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<circle cx="12" cy="8" r="4"/><path d="M12 14c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Paediatrics</h2>
+            <p class="sv-detail-intro">Our Paediatrics department provides comprehensive healthcare for children from newborns through adolescence, delivered by experienced paediatricians in a child-friendly environment.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>We understand that caring for children requires not just medical expertise but also a compassionate, reassuring approach for both child and parent. Our paediatric team is trained to manage the full range of childhood conditions.</p>
+      <h4 class="sv-detail-subhead">Services</h4>
+      <div class="sv-detail-tags">
+        <span>Newborn care &amp; neonatology</span><span>Growth &amp; developmental monitoring</span>
+        <span>Immunisation &amp; vaccination</span><span>Paediatric emergencies</span>
+        <span>Respiratory conditions</span><span>Infectious diseases</span>
+        <span>Nutritional assessment</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. I. Olusegun — Consultant Paediatrician</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. H. Musa — Paediatric Registrar</span></div></div>
+          <div class="sv-detail-cta">
+            <button class="sv-cta-btn" onclick="document.getElementById('sv-booking-modal').classList.add('open'); document.body.style.overflow='hidden'">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book This Service
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-pharmacy" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8L6 7h12l-2-4z"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Pharmacy</h2>
+            <p class="sv-detail-intro">Our on-site pharmacy provides a full dispensing service for in-patients, out-patients, and the general public — ensuring rapid access to prescribed and over-the-counter medications.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our registered pharmacists work as part of the clinical team, reviewing prescriptions for accuracy, advising on drug interactions, and counselling patients on their medications. We stock a comprehensive formulary of branded and generic medicines.</p>
+      <h4 class="sv-detail-subhead">Our Services</h4>
+      <div class="sv-detail-tags">
+        <span>In-patient dispensing</span><span>Out-patient prescriptions</span>
+        <span>Drug interaction checking</span><span>Patient medication counselling</span>
+        <span>Drug refill &amp; delivery service</span><span>Compounding &amp; specialist medications</span>
+      </div>
+      <div class="sv-detail-note">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+        <p>Drug refill and delivery available. Call <a href="tel:08035251295">08035251295</a> or email <a href="mailto:pharmacy@saintnicholashospital.com">pharmacy@saintnicholashospital.com</a></p>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Mr. K. Adegbola — Chief Pharmacist</span></div></div>
+          <div class="sv-detail-cta">
+            <button class="btn-book" data-i18n="book_btn" id="openModal">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Appointment
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-radiology" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Radiology & Diagnostic Imaging</h2>
+            <p class="sv-detail-intro">Our Radiology department is equipped with state-of-the-art diagnostic imaging technology, providing rapid, high-quality reports to support clinical decision-making across all specialties.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our team of specialist radiologists and radiographers delivers accurate and timely imaging services. We support emergency, inpatient, and outpatient requests — with priority reporting available for urgent cases.</p>
+      <h4 class="sv-detail-subhead">Imaging Services</h4>
+      <div class="sv-detail-tags">
+        <span>Digital X-ray</span><span>4D &amp; Doppler Ultrasound</span>
+        <span>Multi-slice CT scanning</span><span>Fluoroscopy</span>
+        <span>Echocardiography</span><span>C-arm intraoperative imaging</span>
+        <span>Mammography</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. L. Adesanya — Consultant Radiologist</span></div><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. O. Nwatu — Radiologist</span></div></div>
+          <div class="sv-detail-cta">
+           <button class="btn-book" data-i18n="book_btn" id="openModal">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book Appointment
+          </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-vascular" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">Thoracic & Vascular Surgery</h2>
+            <p class="sv-detail-intro">Our Thoracic and Vascular Surgery service provides specialist surgical care for conditions affecting the heart, lungs, and major blood vessels.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>Our highly trained surgeons manage complex thoracic and vascular conditions using the latest surgical techniques. We performed our first Open Heart Surgery in February 2019 and have since performed multiple surgeries for patients of all ages and complexities.</p>
+      <h4 class="sv-detail-subhead">Procedures</h4>
+      <div class="sv-detail-tags">
+        <span>Open heart surgery</span><span>Coronary artery bypass grafting (CABG)</span>
+        <span>Aortic aneurysm repair</span><span>Peripheral vascular surgery</span>
+        <span>Lung resections</span><span>Thoracoscopic procedures</span>
+        <span>Carotid endarterectomy</span>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. R. Obiechina — Consultant Cardiothoracic Surgeon</span></div></div>
+          <div class="sv-detail-cta">
+             <button class="btn-book" data-i18n="book_btn" id="openModal">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Appointment
+            </button>
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sv-detail-panel" id="sv-panel-uktb" style="display:none">
+        <div class="sv-detail-header">
+          <div class="sv-detail-icon">
+            <svg viewBox="0 0 24 24"><<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>/></svg>
+          </div>
+          <div>
+            <h2 class="sv-detail-title">UK Visa TB Screening</h2>
+            <p class="sv-detail-intro">St. Nicholas Hospital is a UKVI-approved tuberculosis testing centre. If you are applying for a UK visa and require a TB certificate, we conduct official screenings recognised by the UK Home Office.</p>
+          </div>
+        </div>
+        <div class="sv-detail-content">
+          <p>The UK Government requires visa applicants from certain countries to undergo tuberculosis testing at an approved clinic before applying. Our results are issued within 5 working days and are fully recognised by UK Visas and Immigration.</p>
+      <h4 class="sv-detail-subhead">The Process</h4>
+      <div class="sv-detail-list">
+        <div class="sv-detail-list-item"><span>01</span>Book your appointment online or by phone</div>
+        <div class="sv-detail-list-item"><span>02</span>Attend your screening at our Lagos Island branch (bring original passport)</div>
+        <div class="sv-detail-list-item"><span>03</span>Chest X-ray is taken and reviewed by our specialist radiologist</div>
+        <div class="sv-detail-list-item"><span>04</span>UKVI-recognised certificate issued within 5 working days</div>
+      </div>
+      <div class="sv-detail-note">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <p>Cost: <strong>₦25,000 per applicant.</strong> Families applying together may book together. Please bring your original passport on the day.</p>
+      </div>
+          <div class="sv-detail-doctors"><h4 class="sv-detail-subhead">Doctors in Charge</h4><div class="sv-detail-doc"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Dr. L. Adesanya — Consultant Radiologist (TB Screening Lead)</span></div></div>
+          <div class="sv-detail-cta">
+           <button class="uktb-cta" id="openTbModal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book TB Test
+          </button> 
+            <a href="tel:08022908484" class="sv-cta-call">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+              Call 0802 290 8484
+            </a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <button class="modal-x" id="closeModal"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <h2 class="modal-title">Fast-Track Booking</h2>
+    <p class="modal-sub">Book your appointment in under 2 minutes</p>
+    <div class="f-field"><label class="f-label" for="m-name">Full Name</label><input class="f-input" type="text" id="m-name" placeholder="e.g. Chidi Okonkwo" /></div>
+    <div class="f-field"><label class="f-label" for="m-phone">Phone Number</label><input class="f-input" type="tel" id="m-phone" placeholder="+234 800 000 0000" /></div>
+    <div class="f-field">
+      <label class="f-label" for="m-email">Email Address</label>
+      <input class="f-input" type="email" id="m-email" placeholder="e.g. Chidi Okonkwo@gmail.com" />
+    </div>
+    <div class="f-row">
+      <div class="f-field"><label class="f-label" for="m-branch">Branch</label>
+        <select class="f-select" id="m-branch">
+          <option value="">Select branch</option>
+          <option value="lagos-island">Lagos Island (Main)</option>
+          <option value="vi">Victoria Island</option>
+          <option value="maryland">Maryland</option>
+          <option value="lekki">Lekki (LFZ)</option>
+          <option value="surulere">Surulere</option>
+        </select>
+      </div>
+      <div class="f-field"><label class="f-label" for="m-spec">Specialty</label>
+        <select class="f-select" id="m-spec">
+          <option value="">Select specialty</option>
+          <option value="general">General Practice</option>
+          <option value="paediatrics">Paediatrics</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="neurology">Neurology</option>
+          <option value="neurosurgery">Neurosurgery</option>
+          <option value="orthopaedics">Orthopaedics &amp; Trauma</option>
+          <option value="obstetrics">Obstetrics &amp; Gynaecology</option>
+          <option value="nephrology">Nephrology (Kidney Care)</option>
+          <option value="oncology">Oncology</option>
+          <option value="ent">ENT (Ear, Nose &amp; Throat)</option>
+          <option value="general-surgery">General Surgery</option>
+          <option value="laboratory">Laboratory Services</option>
+          <option value="radiology">Radiology</option>
+          <option value="emergency">Accident &amp; Emergency (A&amp;E)</option>
+        </select>
+      </div>
+    </div>
+    <div class="f-field"><label class="f-label" for="m-date">Preferred Date</label><input class="f-input" type="date" id="m-date" /></div>
+    <button class="btn-sub" id="submitBtn"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Request Appointment</button>
+    <p class="f-note">Our team confirms your booking within 2 hours</p>
+  </div>
+</div>
+ 
+<!-- ══ WHATSAPP ══ -->
+<div class="wa" id="wa">
+  <a href="https://wa.me/2348022908484?text=Hello%20St.%20Nicholas%2C%20I%20would%20like%20to%20book%20an%20appointment." class="wa-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+</div>
+ 
+<!-- ══ LANGUAGE FLOAT ══ -->
+<div class="lang-float" id="langFloat">
+  <div class="lang-float-panel" id="langFloatPanel">
+    <button class="lang-opt active" data-lang="en">🇬🇧 &nbsp;English</button>
+    <button class="lang-opt" data-lang="fr">🇫🇷 &nbsp;Français</button>
+    <div class="lang-divider"></div>
+    <button class="lang-opt" data-lang="yo">🇳🇬 &nbsp;Yorùbá</button>
+    <button class="lang-opt" data-lang="ha">🇳🇬 &nbsp;Hausa</button>
+    <button class="lang-opt" data-lang="ig">🇳🇬 &nbsp;Igbo</button>
+  </div>
+  <button class="lang-float-btn" id="langFloatBtn">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    <span id="langFloatLabel">English</span>
+    <svg class="lang-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+</div>
+
+<div class="modal-bg" id="tbModalBg">
+  <div class="modal">
+    <button class="modal-x" id="closeTbModal" aria-label="Close modal">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <div class="modal-header-flex" style="display:flex; align-items:center; gap:14px; margin-bottom:4px;">
+      <div class="flag-container" style="width:42px; border-radius:4px; overflow:hidden; flex-shrink:0;">
+        <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" style="display:block; width:100%">
+          <rect width="60" height="40" fill="#012169"/>
+          <line x1="0" y1="0" x2="60" y2="40" stroke="white" stroke-width="6"/>
+          <line x1="60" y1="0" x2="0" y2="40" stroke="white" stroke-width="6"/>
+          <line x1="0" y1="0" x2="60" y2="40" stroke="#C8102E" stroke-width="3.6"/>
+          <line x1="60" y1="0" x2="0" y2="40" stroke="#C8102E" stroke-width="3.6"/>
+          <rect x="24" y="0" width="12" height="40" fill="white"/>
+          <rect x="0" y="14" width="60" height="12" fill="white"/>
+          <rect x="26" y="0" width="8" height="40" fill="#C8102E"/>
+          <rect x="0" y="16" width="60" height="8" fill="#C8102E"/>
+        </svg>
+      </div>
+      <h2 class="modal-title">UK Visa TB Screening</h2>
+    </div>
+    <p class="modal-sub" style="margin-bottom:18px;">UKVI-Approved Tuberculosis Test</p>
+
+    <div class="modal-notice" style="background:rgba(30,159,212,.10); border:1px solid rgba(30,159,212,.30); border-radius:8px; padding:11px 14px; display:flex; gap:10px; align-items:flex-start; margin-bottom:20px;">
+      <svg viewBox="0 0 24 24" style="width:15px; height:15px; stroke:var(--cyan-light); fill:none; stroke-width:2; stroke-linecap:round; flex-shrink:0; margin-top:1px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p style="font-size:12.5px; color:rgba(255,255,255,.72); line-height:1.5;">Please bring your <strong>original passport</strong> on the day of your test. Your name must match exactly as it appears on your passport.</p>
+    </div>
+
+    <div class="f-row">
+      <div class="f-field">
+        <label class="f-label" for="tb-fname">First Name</label>
+        <input class="f-input" type="text" id="tb-fname" placeholder="As on passport" required />
+      </div>
+      <div class="f-field">
+        <label class="f-label" for="tb-lname">Last Name</label>
+        <input class="f-input" type="text" id="tb-lname" placeholder="As on passport" required />
+      </div>
+    </div>
+
+    <div class="f-row">
+      <div class="f-field">
+        <label class="f-label" for="tb-dob">Date of Birth</label>
+        <input class="f-input" type="date" id="tb-dob" required />
+      </div>
+      <div class="f-field">
+        <label class="f-label" for="tb-passport">Passport Number</label>
+        <input class="f-input" type="text" id="tb-passport" placeholder="e.g. A12345678" required />
+      </div>
+    </div>
+
+    <div class="f-row">
+      <div class="f-field">
+        <label class="f-label" for="tb-phone">Phone Number</label>
+        <input class="f-input" type="tel" id="tb-phone" placeholder="+234 800 000 0000" required />
+      </div>
+      <div class="f-field">
+        <label class="f-label" for="tb-email">Email Address</label>
+        <input class="f-input" type="email" id="tb-email" placeholder="Certificate sent here" required />
+      </div>
+    </div>
+
+    <div class="f-row">
+      <div class="f-field">
+        <label class="f-label" for="tb-visa">UK Visa Type</label>
+        <select class="f-select" id="tb-visa" required>
+          <option value="" disabled selected>Select visa type</option>
+          <option value="student">Student Visa</option>
+          <option value="work">Work Visa (Skilled Worker)</option>
+          <option value="family">Family Visa</option>
+          <option value="tourist">Tourist / Visitor Visa</option>
+          <option value="settlement">Settlement (ILR)</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="f-field">
+        <label class="f-label" for="tb-date">Preferred Test Date</label>
+        <input class="f-input" type="date" id="tb-date" required />
+      </div>
+    </div>
+
+    <div class="f-field">
+      <label class="f-label" for="tb-ref">
+        Visa Application Reference 
+        <span style="color:rgba(255,255,255,.25); font-weight:400; text-transform:none; letter-spacing:0;">(optional — if available)</span>
+      </label>
+      <input class="f-input" type="text" id="tb-ref" placeholder="e.g. GWF012345678" />
+    </div>
+
+    <div class="f-field">
+      <label class="f-label">Number of Applicants</label>
+      <div class="stepper-group" style="display:flex; align-items:center; border:1px solid rgba(255,255,255,.14); border-radius:6px; overflow:hidden; background:rgba(255,255,255,.07);">
+        <button id="tb-dec" type="button" style="width:38px; height:40px; background:rgba(255,255,255,.08); border:none; color:rgba(255,255,255,.8); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">−</button>
+        <span id="tb-count" style="flex:1; text-align:center; font-size:15px; font-weight:600; color:#fff;">1</span>
+        <button id="tb-inc" type="button" style="width:38px; height:40px; background:rgba(255,255,255,.08); border:none; color:rgba(255,255,255,.8); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">+</button>
+      </div>
+      <div style="font-size:10.5px; color:rgba(255,255,255,.32); text-align:center; margin-top:4px; letter-spacing:.04em;">For families applying together (1–10 people)</div>
+    </div>
+
+    <button class="btn-sub" id="tbSubmitBtn" style="background:#012169; width:100%; display:flex; justify-content:center; align-items:center; gap:8px;">
+      <svg viewBox="0 0 24 24" style="width:15px; height:15px; stroke:currentColor; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg>
+      Submit & Payment
+    </button>
+    
+    <p class="f-note" style="margin-top:12px; text-align:center;">Results ready within 5 working days · UKVI-recognised certificate issued</p>
+  </div>
+</div>
+ 
+ 
+ 
+
+
+ <div id="footer"></div>
+
+    <script src="/public/index.js" defer></script>
+
+<script>
+  let activeId = null;
+
+  function showService(id) {
+    if (activeId) {
+      const prev = document.getElementById('sv-panel-' + activeId);
+      if (prev) prev.style.display = 'none';
+      const prevBtn = document.querySelector('.sv-sidebar-item.active');
+      if (prevBtn) prevBtn.classList.remove('active');
+    }
+    document.getElementById('svEmptyState').style.display = 'none';
+    const panel = document.getElementById('sv-panel-' + id);
+    if (panel) { panel.style.display = 'block'; }
+    const btn = document.querySelector('[data-id="' + id + '"]');
+    if (btn) btn.classList.add('active');
+    activeId = id;
+
+    // On mobile, scroll to detail
+    if (window.innerWidth <= 900) {
+      document.getElementById('svDetailArea').scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+
+  // Search
+  document.getElementById('svSearch').addEventListener('input', function() {
+    const q = this.value.toLowerCase();
+    document.querySelectorAll('.sv-sidebar-item').forEach(item => {
+      const name = item.querySelector('.sv-sidebar-item__name').textContent.toLowerCase();
+      const short = item.querySelector('.sv-sidebar-item__short').textContent.toLowerCase();
+      item.classList.toggle('sv-hidden', q.length > 0 && !name.includes(q) && !short.includes(q));
+    });
+  });
+
+  // Show first service on load
+  showService('ae');
+
+
+</script>
+ <script src="/public/index.js" defer></script>
+</body>
+</html>

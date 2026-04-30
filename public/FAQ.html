@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/st_Nicholas_logo__1_-removebg-preview.png">
+    <link rel="stylesheet" href="/public/index.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+    <section class="FAQ-hero">
+  <div class="hero__dots"></div>
+  <div class="hero__glow"></div>
+  <div class="gold-rule"></div>
+  <div class="hero__inner">
+    <div class="hero__eyebrow"><div class="hero__eyebrow-line"></div><span>Patient Information</span></div>
+    <h1 class="hero__title">Frequently Asked<br><em>Questions</em></h1>
+    <p class="hero__sub">Everything you need to know about your care, billing, safety, and stay at St. Nicholas Hospital. Can't find your answer? Our team is always here to help.</p>
+    <div class="hero__search">
+      <input type="text" id="faqSearch" placeholder="Search questions..." autocomplete="off" />
+      <svg class="hero__search__icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </div>
+  </div>
+</section>
+ 
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="faq-tabs reveal">
+      <button class="faq-tab  faq-tab--active" data-cat="all">All Questions</button>
+      <button class="faq-tab" data-cat="billing">Billing & Payments</button>
+      <button class="faq-tab" data-cat="safety">Patient Safety</button>
+      <button class="faq-tab" data-cat="general">General Information</button>
+      <button class="faq-tab" data-cat="visiting">Visiting & Policies</button>
+    </div>
+    <div id="faqList">
+      
+      <div class="faq-item" data-cat="billing">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">01</span>
+          <span class="faq-q__text">How do I pay for medical services?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>We accept cash, bank transfers, POS/debit cards, and online payments via Paystack. Payment is typically required before or at the point of service for outpatient consultations. For admissions, an estimated deposit is collected upfront, with settlement of the balance on or before discharge.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="billing">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">02</span>
+          <span class="faq-q__text">How recurrently is the Registration Fee charged?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>The registration fee is a one-time payment charged upon your first visit. Returning patients are not charged registration fees again, provided your file remains active in our records.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="general">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">03</span>
+          <span class="faq-q__text">Must I be registered as a patient to use hospital services?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Yes. All patients must be registered before accessing clinical services. Registration is quick and can be done at the front desk of any of our five branches. Please bring a valid form of ID and your HMO card if applicable.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="billing">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">04</span>
+          <span class="faq-q__text">What services are included in my hospital admission deposit?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Your estimated admission deposit covers the projected cost of your stay including bed charges, nursing care, routine investigations, medications, and procedures outlined in your treatment plan. Any services that fall outside the initial estimate will be communicated to you or your next of kin.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="billing">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">05</span>
+          <span class="faq-q__text">What if my final bill is lower than the required admission deposit?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>If your actual bill is lower than your deposit, the balance will be refunded to you at the time of discharge. Please ensure your account details or the payment method used for the deposit are available for the refund process.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="billing">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">06</span>
+          <span class="faq-q__text">Can I get an exact pricing quote?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Due to the nature of medical care, it is difficult to give a completely fixed quote in advance. However, our Client Services team can provide a detailed estimate based on your planned procedure or admission. We are committed to transparency in all billing — you will always be informed before any significant cost is incurred.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="billing">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">07</span>
+          <span class="faq-q__text">How do I pay my bill online?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>You can pay your bill securely online through our Paystack-powered payment portal. Visit our website or speak to our Client Services team for your unique payment reference. Online payments are processed in real-time and receipts are issued immediately.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="billing">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">08</span>
+          <span class="faq-q__text">What if I am on an HMO or company retainership plan?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>If you are covered by an HMO or corporate retainership, please present your valid HMO card and a letter of authorisation (where required) at registration. Our team will liaise directly with your insurer. Please note that services not covered under your plan will be billed to you personally.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="safety">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">09</span>
+          <span class="faq-q__text">Why does the medical team keep asking my name and date of birth?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>This is a critical patient safety practice. Confirming your name and date of birth before every procedure, medication administration, or test ensures we are caring for the right patient at all times. It protects you from errors and is part of our internationally accredited safety protocols.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="safety">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">10</span>
+          <span class="faq-q__text">Why does the nursing staff ask repeatedly if I need the bathroom?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Falls are one of the most common preventable hospital incidents. Regularly asking whether you need the bathroom — especially before procedures or when you are on medication that affects mobility — significantly reduces the risk of falls. It is a simple but important part of keeping you safe.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="safety">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">11</span>
+          <span class="faq-q__text">How can I keep track of my medications?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>You are encouraged to ask your nurse or doctor the name and purpose of every medication you receive. Keep a written record if you can. Our nursing staff are always available to explain what each medication is for and why it has been prescribed. Never hesitate to ask if something seems unfamiliar.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="safety">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">12</span>
+          <span class="faq-q__text">How can I avoid infections when admitted?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Hand hygiene is the single most important way to prevent infection. Wash your hands frequently, especially before eating and after using the bathroom. Remind all visitors and healthcare workers to wash or sanitise their hands before touching you. Our wards are cleaned regularly to internationally accredited standards.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="general">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">13</span>
+          <span class="faq-q__text">Why are members of the medical team looking at the computer so often?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>St. Nicholas Hospital uses an Electronic Medical Records (EMR) system. Doctors and nurses consult the computer to review your test results, medication records, treatment history, and care notes in real time. This improves accuracy, speeds up communication between departments, and ensures every member of your care team has up-to-date information.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="general">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">14</span>
+          <span class="faq-q__text">Why are some patients in isolation?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Patients may be placed in isolation to protect them from infection (for example, if their immune system is weakened) or to prevent the spread of a communicable condition to other patients and staff. Isolation is a standard, evidence-based clinical precaution — not a cause for alarm.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="general">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">15</span>
+          <span class="faq-q__text">What personal information do I need to bring to the hospital?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Please bring: a valid government-issued photo ID (national ID, international passport, or driver's licence), your HMO or insurance card if applicable, a list of your current medications and dosages, details of any known allergies, and the name and contact number of your next of kin or emergency contact.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="safety">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">16</span>
+          <span class="faq-q__text">What safeguards are in place to perform the right surgical procedure?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>We follow a strict surgical safety checklist before every procedure. Your identity, the procedure, and the site of surgery are confirmed with you multiple times before entering the operating theatre. The surgical team conducts a formal 'Time Out' pause to verify all details before the procedure begins. These protocols are in line with WHO Surgical Safety Standards.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="safety">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">17</span>
+          <span class="faq-q__text">How can I know I am getting the right medications?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Before any medication is administered, your nurse will confirm your name, date of birth, the medication name, dose, and route of administration. You should also receive an explanation of what the medication is for. If anything seems unfamiliar or incorrect, please speak up immediately — your safety depends on everyone working together.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="visiting">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">18</span>
+          <span class="faq-q__text">What are the visiting times?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Visiting hours are generally between 11:00 AM – 1:00 PM and 4:00 PM – 7:00 PM daily. However, times may vary by ward, and the clinical team may restrict visiting if a patient requires rest. Visitors are asked to limit to two at a time per patient. Please check with the nursing station on arrival as times may change.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="visiting">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">19</span>
+          <span class="faq-q__text">What is the hospital's smoking policy?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>St. Nicholas Hospital is a strictly smoke-free environment. Smoking is not permitted anywhere on hospital premises — including car parks, entrances, and outdoor areas. This policy is in place to protect the health of all patients, visitors, and staff.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="general">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">20</span>
+          <span class="faq-q__text">How is my privacy and dignity maintained?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Your privacy and dignity are fundamental to your care at St. Nicholas. Clinical consultations and examinations are conducted in private settings. Your medical information is held in strict confidence and is only shared with members of your care team. You have the right to request that non-essential personnel leave the room during any examination or procedure.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="visiting">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">21</span>
+          <span class="faq-q__text">How do I advocate for my loved one?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>You can advocate by staying informed — asking questions, attending ward rounds where permitted, and requesting to speak with the treating doctor or nurse in charge if you have concerns. Designate one family spokesperson to reduce confusion. If you believe something is wrong, please raise it with the ward nurse, department head, or our Patient Relations team directly.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="general">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">22</span>
+          <span class="faq-q__text">What do I need to tell the medical team?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Always share: your full medical history and past diagnoses, all current medications including supplements and herbal remedies, known allergies and previous reactions, previous surgeries or hospitalisations, and any changes in how you are feeling during your stay. Complete information enables us to give you the safest and most effective care possible.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-cat="general">
+        <button class="faq-q" aria-expanded="false">
+          <span class="faq-q__num">23</span>
+          <span class="faq-q__text">What is the discharge process?</span>
+          <svg class="faq-q__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Discharge is planned by your care team when you are medically ready. You will receive a discharge summary outlining your diagnosis, the treatment you received, follow-up instructions, and any new medications. Please ensure your bill is settled before leaving. If transport assistance is needed, please inform the nursing staff in advance.</p>
+        </div>
+      </div>
+    </div>
+    <div class="faq-empty" id="faqEmpty">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>No questions match your search. Try different keywords or browse all categories.</p>
+    </div>
+  </div>
+</section>
+ 
+<section class="contact-strip">
+  <div class="contact-inner">
+    <div>
+      <div class="contact-left__eyebrow"><div class="contact-left__eyebrow-line"></div><span>Still Have Questions?</span></div>
+      <h2 class="contact-title">We're Here to <em>Help</em></h2>
+      <p class="contact-sub">Our Patient Services team is available during opening hours to answer any questions about your care or visit.</p>
+    </div>
+    <div class="contact-btns">
+      <a href="tel:08022908484" class="btn-p">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.8 19.8 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21.5 16"/></svg>
+        Call Us
+      </a>
+      <a href="https://wa.me/2348022908484" target="_blank" rel="noopener noreferrer" class="btn-g" style="background:#25D366;border-color:#25D366;color:#fff">
+        <svg viewBox="0 0 24 24" style="fill:#fff;stroke:none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        WhatsApp
+      </a>
+      <a href="contact.html" class="btn-g">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email Us
+      </a>
+    </div>
+  </div>
+</section>
+
+    <div id="footer"></div>
+
+    <script src="/public/index.js" defer></script>
+<script >
+     // Accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+ 
+  // Category tabs
+  document.querySelectorAll('.faq-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.faq-tab').forEach(t => t.classList.remove('faq-tab--active'));
+      tab.classList.add('faq-tab--active');
+      const cat = tab.dataset.cat;
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.toggle('hidden', cat !== 'all' && item.dataset.cat !== cat);
+      });
+      document.getElementById('faqSearch').value = '';
+      checkEmpty();
+    });
+  });
+ 
+  // Search
+  document.getElementById('faqSearch').addEventListener('input', function() {
+    const q = this.value.toLowerCase().trim();
+    document.querySelectorAll('.faq-tab').forEach(t => t.classList.remove('faq-tab--active'));
+    document.querySelector('[data-cat="all"]').classList.add('faq-tab--active');
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const text = item.querySelector('.faq-q__text').textContent.toLowerCase();
+      const ans  = item.querySelector('.faq-a p').textContent.toLowerCase();
+      item.classList.toggle('hidden', q.length > 0 && !text.includes(q) && !ans.includes(q));
+    });
+    checkEmpty();
+  });
+ 
+  function checkEmpty() {
+    const visible = document.querySelectorAll('.faq-item:not(.hidden)').length;
+    document.getElementById('faqEmpty').style.display = visible === 0 ? 'block' : 'none';
+  }
+ 
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold:0.10 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</script>
+</body>
+</html>
