@@ -857,19 +857,30 @@ if (payBg) {
 
 // 1. SAFE COMPONENT LOADER
 function loadComponent(id, file) {
-    // Using /public/ because that's where your server root is
-    return fetch(`/${file}`)
-        .then(res => res.text())
-        .then(data => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.innerHTML = data;
-                return true; 
-            }
-            return false;
-        });
+    // Works both locally AND on Vercel
+    const paths = [`/${file}`, `/public/${file}`, file];
+    
+    function tryFetch(index) {
+        if (index >= paths.length) return Promise.resolve(false);
+        
+        return fetch(paths[index])
+            .then(res => {
+                if (!res.ok) throw new Error('not found');
+                return res.text();
+            })
+            .then(data => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.innerHTML = data;
+                    return true;
+                }
+                return false;
+            })
+            .catch(() => tryFetch(index + 1));
+    }
+    
+    return tryFetch(0);
 }
-
 // 2. INITIALIZE EVERYTHING
 document.addEventListener("DOMContentLoaded", () => {
     
