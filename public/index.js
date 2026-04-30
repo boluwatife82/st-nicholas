@@ -874,8 +874,8 @@ function loadComponent(id, file) {
 document.addEventListener("DOMContentLoaded", () => {
     
     // Load Navbar and Footer (nav logic now runs automatically via waitForElement)
-    loadComponent("navbar", "/components/navbar.html");
-    loadComponent("footer", "/components/footer.html");
+    loadComponent("navbar", "navbar.html");
+    loadComponent("footer", "footer.html");
 
     // 3. SAFE PAGE-SPECIFIC LOGIC
     const branchGrid = document.querySelector('.loc-grid');
